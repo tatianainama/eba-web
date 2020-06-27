@@ -27,7 +27,8 @@
         "sellPrice": ""
       }
     ],
-    "apply": "Tras limpiar y tonificar rostro, cuello y escote, aplicar mañana y noche con un suave masaje."
+    "apply": "Tras limpiar y tonificar rostro, cuello y escote, aplicar mañana y noche con un suave masaje.",
+    "lang": "es"
   },
   {
     "name": "Sublime Uvit - Crema Reparadora",
@@ -56,7 +57,8 @@
         "sellPrice": ""
       }
     ],
-    "apply": "Tras limpiar y tonificar rostro, cuello y escote, aplicar diariamente por la noche. Dependiendo de las necesidades de la piel, se combinará la Crema Sublime Uvit"
+    "apply": "Tras limpiar y tonificar rostro, cuello y escote, aplicar diariamente por la noche. Dependiendo de las necesidades de la piel, se combinará la Crema Sublime Uvit",
+    "lang": "es"
   },
   {
     "name": "Audace - Glico Activo",
@@ -84,7 +86,8 @@
         "sellPrice": ""
       }
     ],
-    "apply": "Aplicar en rostro, cuello y escote, luego de la crema Sublime Uvit. Aplicar en estrías y cicatrices con suave masaje circular."
+    "apply": "Aplicar en rostro, cuello y escote, luego de la crema Sublime Uvit. Aplicar en estrías y cicatrices con suave masaje circular.",
+    "lang": "es"
   },
   {
     "name": "Bisome Retinol - Fluido Facial",
@@ -112,7 +115,8 @@
         "sellPrice": ""
       }
     ],
-    "apply": ""
+    "apply": "",
+    "lang": "es"
   },
   {
     "name": "Emulsión de Higiene",
@@ -139,7 +143,8 @@
         "sellPrice": ""
       }
     ],
-    "apply": "Aplicar con suaves maniobras, retirar"
+    "apply": "Aplicar con suaves maniobras, retirar",
+    "lang": "es"
   },
   {
     "name": "Repair Eye Contour",
@@ -164,7 +169,8 @@
         "sellPrice": 560
       }
     ],
-    "apply": "Aplicar diariamente, por la mañana."
+    "apply": "Aplicar diariamente, por la mañana.",
+    "lang": "es"
   },
   {
     "name": "Uvit Serum Defense",
@@ -194,7 +200,8 @@
         "sellPrice": ""
       }
     ],
-    "apply": "Tratamiento de peeling: Dejar actuar diez minutos, sin retirar aplicar RefreshingMask durante diez minutos, retirar con esponja y agua. Permeación de activos: Aplicar peeling Bio Regulador, dejar actuar durante tres minutos, retirar, aplicar activos concentrados del 1 al 7 de acuerdo al tratamiento a realizar"
+    "apply": "Tratamiento de peeling: Dejar actuar diez minutos, sin retirar aplicar RefreshingMask durante diez minutos, retirar con esponja y agua. Permeación de activos: Aplicar peeling Bio Regulador, dejar actuar durante tres minutos, retirar, aplicar activos concentrados del 1 al 7 de acuerdo al tratamiento a realizar",
+    "lang": "es"
   },
   {
     "name": "Exfoliating Scrub",
@@ -215,7 +222,8 @@
         "sellPrice": ""
       }
     ],
-    "apply": "Aplicar sobre la piel, humedecer con agua y trabajar en forma suave y circular de tres a cinco minutos. Retirar con esponja y agua."
+    "apply": "Aplicar sobre la piel, humedecer con agua y trabajar en forma suave y circular de tres a cinco minutos. Retirar con esponja y agua.",
+    "lang": "es"
   },
   {
     "name": "Refreshing Mask",
@@ -240,7 +248,8 @@
         "sellPrice": ""
       }
     ],
-    "apply": "Aplicar con la piel limpia, luego de retirar Exfoliating Scrub, percibirá un suave picor durante un minuto al llegar a las zonas más profundas de la piel. Dejar actuar durante 20 minutos, observará al retirar una piel suave, limpia y fresca, aún en las instancias más sensibles. Puede combinarse en métodos sinérgicos con Micropeeling o Peeling Biorregulador"
+    "apply": "Aplicar con la piel limpia, luego de retirar Exfoliating Scrub, percibirá un suave picor durante un minuto al llegar a las zonas más profundas de la piel. Dejar actuar durante 20 minutos, observará al retirar una piel suave, limpia y fresca, aún en las instancias más sensibles. Puede combinarse en métodos sinérgicos con Micropeeling o Peeling Biorregulador",
+    "lang": "es"
   },
   {
     "name": "Specific Mask",
@@ -264,7 +273,8 @@
         "sellPrice": ""
       }
     ],
-    "apply": "Aplicar en rostro, cuello y escote, dejar actuar durante veinte minutos, retirar mediante esponja y agua"
+    "apply": "Aplicar en rostro, cuello y escote, dejar actuar durante veinte minutos, retirar mediante esponja y agua",
+    "lang": "es"
   },
   {
     "name": "Acne Skin Cleans",
@@ -293,7 +303,8 @@
         "sellPrice": ""
       }
     ],
-    "apply": "Acné: tres aplicaciones diarias, mañana, tarde y noche. No retirar. Piel seborreica: Aplicar por la mañana. No retirar."
+    "apply": "Acné: tres aplicaciones diarias, mañana, tarde y noche. No retirar. Piel seborreica: Aplicar por la mañana. No retirar.",
+    "lang": "es"
   },
   {
     "name": "Peeling Bio Regulador",
@@ -316,7 +327,8 @@
         "sellPrice": ""
       }
     ],
-    "apply": "Tratamiento de peeling: Dejar actuar diez minutos, sin retirar aplicar Refreshing Mask durante diez minutos, retirar. Permeación de activos: Aplicar peeling Bio Regulador, dejar actuar durante tres minutos, retirar, aplicar Monodosis específicas o activos concentrados del 1 al 7 de acuerdo al tratamiento a realizar"
+    "apply": "Tratamiento de peeling: Dejar actuar diez minutos, sin retirar aplicar Refreshing Mask durante diez minutos, retirar. Permeación de activos: Aplicar peeling Bio Regulador, dejar actuar durante tres minutos, retirar, aplicar Monodosis específicas o activos concentrados del 1 al 7 de acuerdo al tratamiento a realizar",
+    "lang": "es"
   },
   {
     "name": "Micropeeling",
@@ -339,7 +351,8 @@
         "sellPrice": ""
       }
     ],
-    "apply": "Aplicar sobre piel limpia, luego de retirar ExfoliatingScrub, trabajar las zonas de manchas cutáneas en forma suave y circular durante tres a cinco minutos, extender a toda la piel del rostro y cuello. Dejar actuar durante cinco minutos y sin retirar aplicar SpecificMasck. Dejar actuar quince minutos y retirar mediante esponja y agua."
+    "apply": "Aplicar sobre piel limpia, luego de retirar ExfoliatingScrub, trabajar las zonas de manchas cutáneas en forma suave y circular durante tres a cinco minutos, extender a toda la piel del rostro y cuello. Dejar actuar durante cinco minutos y sin retirar aplicar SpecificMasck. Dejar actuar quince minutos y retirar mediante esponja y agua.",
+    "lang": "es"
   },
   {
     "name": "Microdermo Lift",
@@ -360,7 +373,8 @@
         "sellPrice": 520
       }
     ],
-    "apply": "Aplicar en la zona del contorno de los ojos y líneas de expresión"
+    "apply": "Aplicar en la zona del contorno de los ojos y líneas de expresión",
+    "lang": "es"
   },
   {
     "name": "Hydra Intensive Serum",
@@ -389,7 +403,8 @@
         "sellPrice": ""
       }
     ],
-    "apply": "Aplicar por la mañana"
+    "apply": "Aplicar por la mañana",
+    "lang": "es"
   },
   {
     "name": "Hydra Intensive Tonico",
@@ -419,7 +434,8 @@
         "sellPrice": ""
       }
     ],
-    "apply": "Aplicar por la mañana"
+    "apply": "Aplicar por la mañana",
+    "lang": "es"
   },
   {
     "name": "RENOVATIO Retinol For Men",
@@ -440,7 +456,8 @@
         "sellPrice": 420
       }
     ],
-    "apply": "aplicar por la mañana y por la noche"
+    "apply": "aplicar por la mañana y por la noche",
+    "lang": "es"
   },
   {
     "name": "RENOVATIO Serum For Men",
@@ -463,7 +480,8 @@
         "sellPrice": 420
       }
     ],
-    "apply": "Aplicar después de afeitar, por la mañana y por la noche"
+    "apply": "Aplicar después de afeitar, por la mañana y por la noche",
+    "lang": "es"
   },
   {
     "name": "RENOVATIO Skin Control For Men",
@@ -486,7 +504,8 @@
         "sellPrice": 420
       }
     ],
-    "apply": "Aplicar después de afeitar, por la mañana y por la noche."
+    "apply": "Aplicar después de afeitar, por la mañana y por la noche.",
+    "lang": "es"
   },
   {
     "name": "1 Vitamina C Liposomada",
@@ -507,7 +526,8 @@
         "sellPrice": ""
       }
     ],
-    "apply": "Indicada para el tratamiento profesional."
+    "apply": "Indicada para el tratamiento profesional.",
+    "lang": "es"
   },
   {
     "name": "2 Acido Lipoico",
@@ -528,7 +548,8 @@
         "sellPrice": ""
       }
     ],
-    "apply": "Indicada para el tratamiento profesional."
+    "apply": "Indicada para el tratamiento profesional.",
+    "lang": "es"
   },
   {
     "name": "3 Oligoelementos Marinos +Zn+Cu",
@@ -551,7 +572,8 @@
         "sellPrice": ""
       }
     ],
-    "apply": "Indicada para el tratamiento profesional."
+    "apply": "Indicada para el tratamiento profesional.",
+    "lang": "es"
   },
   {
     "name": "4 Fosfatidilcolina",
@@ -572,7 +594,8 @@
         "sellPrice": ""
       }
     ],
-    "apply": "Indicada para el tratamiento profesional."
+    "apply": "Indicada para el tratamiento profesional.",
+    "lang": "es"
   },
   {
     "name": "5 Centella Asiatica",
@@ -592,7 +615,8 @@
         "sellPrice": ""
       }
     ],
-    "apply": "Indicada para el tratamiento profesional."
+    "apply": "Indicada para el tratamiento profesional.",
+    "lang": "es"
   },
   {
     "name": "6 Espirulina",
@@ -613,7 +637,8 @@
         "sellPrice": ""
       }
     ],
-    "apply": "Indicada para el tratamiento profesional."
+    "apply": "Indicada para el tratamiento profesional.",
+    "lang": "es"
   },
   {
     "name": "7 Cafeina",
@@ -640,7 +665,8 @@
         "sellPrice": ""
       }
     ],
-    "apply": "Apoyo domiciliario: Aplicar antes de hacer ejercicio y después de ducharse. Indicada para todo tipo de piel"
+    "apply": "Apoyo domiciliario: Aplicar antes de hacer ejercicio y después de ducharse. Indicada para todo tipo de piel",
+    "lang": "es"
   },
   {
     "name": "Tester de Hidratación",
@@ -651,7 +677,8 @@
         "price": 1590,
         "sellPrice": ""
       }
-    ]
+    ],
+    "lang": "es"
   },
   {
     "name": "Hydroviton - Monodosis",
@@ -673,7 +700,8 @@
         "sellPrice": 1080
       }
     ],
-    "apply": "Aplicar con la piel limpia, por la mañana y por la noche."
+    "apply": "Aplicar con la piel limpia, por la mañana y por la noche.",
+    "lang": "es"
   },
   {
     "name": "Vitamina F Pure - Monodosis",
@@ -694,7 +722,8 @@
         "sellPrice": 1030
       }
     ],
-    "apply": "Aplicar por la mañana y por la noche."
+    "apply": "Aplicar por la mañana y por la noche.",
+    "lang": "es"
   },
   {
     "name": "Skin Dose - Monodosis",
@@ -716,7 +745,8 @@
         "sellPrice": 1166
       }
     ],
-    "apply": "Aplicación: trabajar en forma circular en las manchas o tratar zonas con irregularidades pigmentarias, luego extender a toda la piel."
+    "apply": "Aplicación: trabajar en forma circular en las manchas o tratar zonas con irregularidades pigmentarias, luego extender a toda la piel.",
+    "lang": "es"
   },
   {
     "name": "Bio Dose - Monodosis",
@@ -739,7 +769,8 @@
         "sellPrice": 1000
       }
     ],
-    "apply": "aplicar por la mañana y por la noche"
+    "apply": "aplicar por la mañana y por la noche",
+    "lang": "es"
   },
   {
     "name": "HSP - 20 - Monodosis",
@@ -761,7 +792,8 @@
         "sellPrice": 1180
       }
     ],
-    "apply": "Aplicar por la noche en la zona de contorno de ojos."
+    "apply": "Aplicar por la noche en la zona de contorno de ojos.",
+    "lang": "es"
   },
   {
     "name": "Complex AM 40 - Monodosis",
@@ -782,7 +814,8 @@
         "sellPrice": 1260
       }
     ],
-    "apply": "Aplicar por la mañana y por la noche"
+    "apply": "Aplicar por la mañana y por la noche",
+    "lang": "es"
   },
   {
     "name": "Complex AM 45 - Monodosis",
@@ -804,7 +837,8 @@
         "sellPrice": 1220
       }
     ],
-    "apply": "Aplicar todos los días, por la noche en el rostro, cuello y escote"
+    "apply": "Aplicar todos los días, por la noche en el rostro, cuello y escote",
+    "lang": "es"
   },
   {
     "name": "Vitamina C - Monodosis",
@@ -825,7 +859,8 @@
         "sellPrice": 1200
       }
     ],
-    "apply": "Aplicar diariamente por la mañana."
+    "apply": "Aplicar diariamente por la mañana.",
+    "lang": "es"
   },
   {
     "name": "Argan Bio + - Monodosis",
@@ -846,7 +881,8 @@
         "sellPrice": 1260
       }
     ],
-    "apply": "Aplicar diariamente. Cuando se traten estrías y cicatrices, aplicar dos veces por día"
+    "apply": "Aplicar diariamente. Cuando se traten estrías y cicatrices, aplicar dos veces por día",
+    "lang": "es"
   },
   {
     "name": "DD Cream",
@@ -871,7 +907,8 @@
         "sellPrice": 460
       }
     ],
-    "apply": "Aplicar con la piel limpia por la mañana."
+    "apply": "Aplicar con la piel limpia por la mañana.",
+    "lang": "es"
   },
   {
     "name": "Whitening Cream",
@@ -901,7 +938,8 @@
         "sellPrice": ""
       }
     ],
-    "apply": "Aplicar diariamente por la noche, en las zonas hiperpigmentadas, dejar actuar durante 2 minutos, y extender a todo el rostro. Se puede potenciar el tratamiento con la aplicación de ampollas SKIN-DOSE."
+    "apply": "Aplicar diariamente por la noche, en las zonas hiperpigmentadas, dejar actuar durante 2 minutos, y extender a todo el rostro. Se puede potenciar el tratamiento con la aplicación de ampollas SKIN-DOSE.",
+    "lang": "es"
   },
   {
     "name": "Sensitive Cream",
@@ -931,7 +969,8 @@
         "sellPrice": ""
       }
     ],
-    "apply": "Aplicar diariamente por la mañana Sensitive Skin, el tratamiento puede potenciarse con Monodosis-Vitamina F aplicadas durante la noche."
+    "apply": "Aplicar diariamente por la mañana Sensitive Skin, el tratamiento puede potenciarse con Monodosis-Vitamina F aplicadas durante la noche.",
+    "lang": "es"
   },
   {
     "name": "Dynamic DO ALL – 1",
@@ -954,7 +993,8 @@
         "sellPrice": ""
       }
     ],
-    "apply": "Dejar actuar durante quince minutos, de acuerdo a las indicaciones del protocolo específico y retirar."
+    "apply": "Dejar actuar durante quince minutos, de acuerdo a las indicaciones del protocolo específico y retirar.",
+    "lang": "es"
   },
   {
     "name": "Dynamic DO ALL – 2",
@@ -978,7 +1018,8 @@
         "sellPrice": ""
       }
     ],
-    "apply": "Puede utilizarse de forma independiente o en sinergia con activos tópicos en procedimientos dermocosmiátricos para suavizar, acondicionar y compensar la piel. Dejar actuar durante quince minutos, de acuerdo a las indicaciones del protocolo específico y retirar."
+    "apply": "Puede utilizarse de forma independiente o en sinergia con activos tópicos en procedimientos dermocosmiátricos para suavizar, acondicionar y compensar la piel. Dejar actuar durante quince minutos, de acuerdo a las indicaciones del protocolo específico y retirar.",
+    "lang": "es"
   },
   {
     "name": "PROTECTION TIME  Color  Ác Hialurónico",
@@ -998,7 +1039,8 @@
         "sellPrice": 580
       }
     ],
-    "apply": "Aplicar la crema antes de salir a la playa o la piscina, y como mínimo 30 minutos antes de exponerse al sol. Extender PROTECTION TIME 50+ sobre la piel bien seca. Utilizar protección solar aunque esté nublado. Reaplicar cuando sea necesario de acuerdo a cada fototipo cutáneo. Se recomienda cada dos horas para mantener la protección, especialmente después de un baño o nadar"
+    "apply": "Aplicar la crema antes de salir a la playa o la piscina, y como mínimo 30 minutos antes de exponerse al sol. Extender PROTECTION TIME 50+ sobre la piel bien seca. Utilizar protección solar aunque esté nublado. Reaplicar cuando sea necesario de acuerdo a cada fototipo cutáneo. Se recomienda cada dos horas para mantener la protección, especialmente después de un baño o nadar",
+    "lang": "es"
   },
   {
     "name": "PROTECTION TIME Sepicalm V.G.",
@@ -1019,7 +1061,8 @@
         "sellPrice": 560
       }
     ],
-    "apply": "Aplicar la crema antes de salir a la playa o la piscina, y como mínimo 30 minutos antes de exponerse al sol. Extender PROTECTION TIME 50+ sobre la piel bien seca. Utilizar protección solar aunque esté nublado. Reaplicar cuando sea necesario de acuerdo a cada fototipo cutáneo. Se recomienda cada dos horas para mantener la protección, especialmente después de un baño o nadar"
+    "apply": "Aplicar la crema antes de salir a la playa o la piscina, y como mínimo 30 minutos antes de exponerse al sol. Extender PROTECTION TIME 50+ sobre la piel bien seca. Utilizar protección solar aunque esté nublado. Reaplicar cuando sea necesario de acuerdo a cada fototipo cutáneo. Se recomienda cada dos horas para mantener la protección, especialmente después de un baño o nadar",
+    "lang": "es"
   },
   {
     "name": "PROTECTION TIME  Color Grosella",
@@ -1039,7 +1082,8 @@
         "sellPrice": 1220
       }
     ],
-    "apply": "Aplicar la crema antes de salir a la playa o la piscina, y como mínimo 30 minutos antes de exponerse al sol. Extender PROTECTION TIME 50+ sobre la piel bien seca. Utilizar protección solar aunque esté nublado. Reaplicar cuando sea necesario de acuerdo a cada fototipo cutáneo. Se recomienda cada dos horas para mantener la protección, especialmente después de un baño o nadar"
+    "apply": "Aplicar la crema antes de salir a la playa o la piscina, y como mínimo 30 minutos antes de exponerse al sol. Extender PROTECTION TIME 50+ sobre la piel bien seca. Utilizar protección solar aunque esté nublado. Reaplicar cuando sea necesario de acuerdo a cada fototipo cutáneo. Se recomienda cada dos horas para mantener la protección, especialmente después de un baño o nadar",
+    "lang": "es"
   },
   {
     "name": "PROTECTION TIME  Aceite de Sésamo",
@@ -1059,7 +1103,8 @@
         "sellPrice": 1200
       }
     ],
-    "apply": "Aplicar la crema antes de salir a la playa o la piscina, y como mínimo 30 minutos antes de exponerse al sol. Extender PROTECTION TIME 50+ sobre la piel bien seca. Utilizar protección solar aunque esté nublado. Reaplicar cuando sea necesario de acuerdo a cada fototipo cutáneo. Se recomienda cada dos horas para mantener la protección, especialmente después de un baño o nadar"
+    "apply": "Aplicar la crema antes de salir a la playa o la piscina, y como mínimo 30 minutos antes de exponerse al sol. Extender PROTECTION TIME 50+ sobre la piel bien seca. Utilizar protección solar aunque esté nublado. Reaplicar cuando sea necesario de acuerdo a cada fototipo cutáneo. Se recomienda cada dos horas para mantener la protección, especialmente después de un baño o nadar",
+    "lang": "es"
   },
   {
     "name": "Crema Antioxidante Corporal",
@@ -1088,7 +1133,8 @@
         "sellPrice": ""
       }
     ],
-    "apply": ""
+    "apply": "",
+    "lang": "es"
   },
   {
     "name": "Dermo Corp, Crema de Masajes",
@@ -1099,7 +1145,8 @@
         "price": 350,
         "sellPrice": 700
       }
-    ]
+    ],
+    "lang": "es"
   },
   {
     "name": "Lift Corp, Crema de Masajes",
@@ -1110,7 +1157,8 @@
         "price": 360,
         "sellPrice": 720
       }
-    ]
+    ],
+    "lang": "es"
   },
   {
     "name": "Espuma ACTIVE 7",
@@ -1135,7 +1183,8 @@
         "sellPrice": 580
       }
     ],
-    "apply": "En gabinete, aplicar luego del Scrub, en sinergia con activos concentrados, Centella Asiática, Cafeina, Fosfatidilcolina. Puede combinarse con aparatología. Apoyo domiciliario: Aplicar antes de hacer ejercicio y después de ducharse. Indicada para todo tipo de piel."
+    "apply": "En gabinete, aplicar luego del Scrub, en sinergia con activos concentrados, Centella Asiática, Cafeina, Fosfatidilcolina. Puede combinarse con aparatología. Apoyo domiciliario: Aplicar antes de hacer ejercicio y después de ducharse. Indicada para todo tipo de piel.",
+    "lang": "es"
   },
   {
     "name": "Espuma Strialess",
@@ -1155,7 +1204,8 @@
         "price": 300,
         "sellPrice": 600
       }
-    ]
+    ],
+    "lang": "es"
   },
   {
     "name": "S.O.S Sculpt",
@@ -1175,7 +1225,8 @@
         "price": 300,
         "sellPrice": 600
       }
-    ]
+    ],
+    "lang": "es"
   },
   {
     "name": "S.O.S Extreme",
@@ -1195,7 +1246,8 @@
         "price": 300,
         "sellPrice": 600
       }
-    ]
+    ],
+    "lang": "es"
   },
   {
     "name": "Therapy Ritual's Coconut",
@@ -1214,7 +1266,8 @@
         "price": 280,
         "sellPrice": ""
       }
-    ]
+    ],
+    "lang": "es"
   },
   {
     "name": "Therapy Ritual's Sweet Almond Oil",
@@ -1232,7 +1285,8 @@
         "price": 270,
         "sellPrice": ""
       }
-    ]
+    ],
+    "lang": "es"
   },
   {
     "name": "Therapy Ritual's  - Origins",
@@ -1248,7 +1302,8 @@
         "price": 280,
         "sellPrice": 560
       }
-    ]
+    ],
+    "lang": "es"
   },
   {
     "name": "Therapy Ritual's - Early Spring",
@@ -1264,7 +1319,8 @@
         "price": 220,
         "sellPrice": 440
       }
-    ]
+    ],
+    "lang": "es"
   },
   {
     "name": "Therapy Ritual's - Solstice",
@@ -1280,7 +1336,8 @@
         "price": 230,
         "sellPrice": 460
       }
-    ]
+    ],
+    "lang": "es"
   },
   {
     "name": "Therapy Ritual's - Imperial Species",
@@ -1296,7 +1353,8 @@
         "price": 230,
         "sellPrice": 460
       }
-    ]
+    ],
+    "lang": "es"
   },
   {
     "name": "Therapy Ritual's - Select Lavander",
@@ -1312,6 +1370,7 @@
         "price": 230,
         "sellPrice": 460
       }
-    ]
+    ],
+    "lang": "es"
   }
 ]
