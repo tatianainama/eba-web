@@ -2,6 +2,7 @@ import express from 'express';
 import dotenv from 'dotenv'
 import { MongoClient } from 'mongodb';
 import initDB from '../db';
+import productRouter from './products/routes';
 
 dotenv.config();
 
@@ -14,6 +15,7 @@ MongoClient.connect(process.env.DB_URL, { useUnifiedTopology: true }).then(clien
   initDB(db);
   return db;
 }).then(db => {
+  app.use('/products', productRouter(db));
   app.get('/', (req, res) => res.send('hi'));
   app.listen(port, () => {
     console.log(`app listening at http://localhost:${port}`);
