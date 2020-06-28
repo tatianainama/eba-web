@@ -18,14 +18,368 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="node_modules/uikit/dist/css/uikit.min.css">
+  <link rel="stylesheet" href="css/styles.css">
 
   <meta name="theme-color" content="#fafafa">
 </head>
 
 <body>
+  <div class="top-wrap uk-position-relative">
+			
+    <!-- NAV -->
+    <div class="nav" data-uk-sticky="cls-active: uk-background-default uk-box-shadow-medium; top: 10vh; animation: uk-animation-slide-top">
+      <div class="uk-container">
+        <nav class="uk-navbar uk-navbar-container uk-navbar-transparent" data-uk-navbar>
+          <div class="uk-navbar-left">
+            <div class="uk-navbar-item uk-padding-remove-horizontal">
+              <a class="uk-logo" title="Logo" href=""><img src="img/horizontal.svg" alt="home"></a>
+            </div>
+          </div>
+          <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav uk-visible@s">
+              <li class="uk-active uk-visible@m"><a href="" data-uk-icon="home"></a></li>
+              <li><a href="#us" uk-scroll>Nosotros</a></li>
+              <li>
+                <a href="#products" uk-scroll>Productos</a>
+              </li>
+              <li><a href="#distribution" uk-scroll>Distribuidoras</a></li>
+              <li><a href="#eba-footer" uk-scroll>Contacto</a></li>
+            </ul>
+            <a class="uk-navbar-toggle uk-navbar-item uk-hidden@s" data-uk-toggle data-uk-navbar-toggle-icon href="#offcanvas-nav"></a>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <!-- /NAV -->
+    
+    <div class="uk-cover-container uk-flex uk-flex-middle top-wrap-height">
+      
+      <!-- TOP CONTAINER -->
+      <div class="uk-container uk-flex-auto top-container uk-position-relative uk-margin-medium-top" data-uk-parallax="y: 0,50; easing:0; opacity:0.2">
+        <div class="uk-width-1-2@s uk-position-right" data-uk-scrollspy="cls: uk-animation-slide-right-medium; target: > *; delay: 150">
+          <!-- <h6 class="uk-text-primary uk-text-right uk-margin-small-bottom">RESEARCH</h6> -->
+          <h1 class="uk-margin-remove-top uk-text-right">Cuidado específico para cada tipo de piel.</h1>
+          <p class="subtitle-text uk-visible@s uk-text-right">Productos profesionales, elaborados con normas de calidad internacional GMP, basados en sustancias activas concentradas de gran pureza y vehículos específicos altamente eficaces que permiten optimizar la belleza y cuidados personalizados de la piel, con base científica.</p>
+        </div>
+      </div>
+      <!-- /TOP CONTAINER -->
+      <!-- TOP IMAGE -->
+      <img src="img/cover-photo.jpg" alt="" data-uk-cover data-uk-img data-uk-parallax="opacity: 1,0.1; easing:0">
+      <!-- /TOP IMAGE -->
+    </div>
+    <!-- <div class="uk-position-bottom-center uk-position-medium uk-position-z-index uk-text-center">
+      <a href="#content" data-uk-scroll="duration: 500" data-uk-icon="icon: arrow-down; ratio: 2"></a>
+    </div> -->
+  </div>
+  <!-- /TOP -->
 
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
+  <section id="us" class="uk-section uk-section-default uk-section-large">
+    <div class="uk-container">
+      <h3>Nosotros</h3>
+      <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia molestiae earum odit? Ducimus, ratione, deleniti eius sed cumque eaque rerum expedita in dolore debitis corporis perferendis, excepturi voluptates possimus repellat.</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores magnam nobis vel tempora, hic culpa quos tenetur consequatur rem sunt iste itaque dolores! Commodi eius temporibus culpa asperiores, assumenda illum.</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut fuga consequatur ea illo exercitationem omnis repellendus aspernatur, cupiditate repellat nulla id expedita repudiandae eos perspiciatis sint qui maxime. Dignissimos, reiciendis?</p>
+        
+      </div>
+    </div>
+  </section>
+
+  <section id="products" class="uk-section uk-section-muted">
+    <div class="uk-container">
+      <div class="uk-section uk-section-small uk-padding-remove-top">
+        <ul class="uk-subnav uk-subnav-pill uk-flex uk-flex-center" data-uk-switcher="connect: .eba-products-desc; animation: uk-animation-fade">
+          <li><a class="uk-border-pill" href="#">Lorem</a></li>
+          <li><a class="uk-border-pill" href="#">Ipsum</a></li>
+          <li><a class="uk-border-pill" href="#">Consectetur</a></li>
+        </ul>
+      </div>
+
+      <ul class="uk-switcher uk-margin eba-products-desc">
+        <li>
+          <div class="uk-grid uk-child-width-1-2@l uk-flex-middle" data-uk-grid data-uk-scrollspy="target: > div; cls: uk-animation-slide-left-medium">
+            <div>
+              <img src="img/productos.png" data-src="img/productos.png" alt="" data-uk-img>
+            </div>
+            <div data-uk-scrollspy-class="uk-animation-slide-right-medium">
+              <h6 class="uk-text-primary">Aut fuga consequatur</h6>
+              <h2 class="uk-margin-small-top">cupiditate repellat nulla id expedita</h2>
+              <p class="subtitle-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation.
+              </p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="uk-grid uk-child-width-1-2@l uk-flex-middle" data-uk-grid data-uk-scrollspy="target: > div; cls: uk-animation-slide-left-medium">
+            <div>
+              <img src="img/protectores.png" data-src="img/protectores.png" alt="" data-uk-img>
+            </div>
+            <div data-uk-scrollspy-class="uk-animation-slide-right-medium">
+              <h6 class="uk-text-primary">Aut fuga consequatur</h6>
+              <h2 class="uk-margin-small-top">cupiditate repellat nulla id expedita</h2>
+              <p class="subtitle-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation.
+              </p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="uk-grid uk-child-width-1-2@l uk-flex-middle" data-uk-grid data-uk-scrollspy="target: > div; cls: uk-animation-slide-left-medium">
+            <div>
+              <img src="img/monodosis.png" data-src="img/monodosis.png" alt="" data-uk-img>
+            </div>
+            <div data-uk-scrollspy-class="uk-animation-slide-right-medium">
+              <h6 class="uk-text-primary">Aut fuga consequatur</h6>
+              <h2 class="uk-margin-small-top">cupiditate repellat nulla id expedita</h2>
+              <p class="subtitle-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation.
+              </p>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="uk-flex uk-flex-center">
+        <button class="uk-button uk-button-primary ">Catalogo</button>
+      </div>
+    </div>
+  </section>
+  
+  <section id="distribution" class="uk-section uk-section-default">
+    <div class="uk-container">
+      <div class="uk-section uk-section-small uk-padding-remove-top">
+        <ul class="uk-subnav uk-subnav-pill uk-flex uk-flex-center" data-uk-switcher="connect: .eba-distribution; animation: uk-animation-fade">
+          <li><a class="uk-border-pill" href="#">Capital Federal y GBA</a></li>
+          <li><a class="uk-border-pill" href="#">Interior del pais</a></li>
+          <li><a class="uk-border-pill" href="#">Internacional</a></li>
+        </ul>
+      </div>
+
+      <ul class="uk-switcher uk-margin eba-distribution">
+        <li>
+          <div class="uk-flex-center" uk-scrollspy="target: > div; cls: uk-animation-slide-left-medium" uk-grid>
+            <div>
+              <div class="uk-card uk-card-default uk-card-body">
+                <h3 class="uk-card-title uk-margin-remove-bottom">NUCLEA</h3>
+                <p class="uk-text-meta uk-margin-remove"><time datetime="2016-04-01T19:00">Belgrano, Capital Federal</time></p>
+                <p class="uk-text uk-margin-remove">Ciudad de la Paz 2985</p>
+                <p class="uk-text uk-margin-remove">011.4544.2202</p>
+              </div>
+            </div>
+            <div>
+              <div class="uk-card uk-card-default uk-card-body">
+                <h3 class="uk-card-title uk-margin-remove-bottom">NUCLEA</h3>
+                <p class="uk-text-meta uk-margin-remove"><time datetime="2016-04-01T19:00">Belgrano, Capital Federal</time></p>
+                <p class="uk-text uk-margin-remove">Ciudad de la Paz 2985</p>
+                <p class="uk-text uk-margin-remove">011.4544.2202</p>
+              </div>
+            </div>
+            <div>
+              <div class="uk-card uk-card-default uk-card-body">
+                <h3 class="uk-card-title uk-margin-remove-bottom">NUCLEA</h3>
+                <p class="uk-text-meta uk-margin-remove"><time datetime="2016-04-01T19:00">Belgrano, Capital Federal</time></p>
+                <p class="uk-text uk-margin-remove">Ciudad de la Paz 2985</p>
+                <p class="uk-text uk-margin-remove">011.4544.2202</p>
+              </div>
+            </div>
+            <div>
+              <div class="uk-card uk-card-default uk-card-body">
+                <h3 class="uk-card-title uk-margin-remove-bottom">NUCLEA</h3>
+                <p class="uk-text-meta uk-margin-remove"><time datetime="2016-04-01T19:00">Belgrano, Capital Federal</time></p>
+                <p class="uk-text uk-margin-remove">Ciudad de la Paz 2985</p>
+                <p class="uk-text uk-margin-remove">011.4544.2202</p>
+              </div>
+            </div>
+            <div>
+              <div class="uk-card uk-card-default uk-card-body">
+                <h3 class="uk-card-title uk-margin-remove-bottom">NUCLEA</h3>
+                <p class="uk-text-meta uk-margin-remove"><time datetime="2016-04-01T19:00">Belgrano, Capital Federal</time></p>
+                <p class="uk-text uk-margin-remove">Ciudad de la Paz 2985</p>
+                <p class="uk-text uk-margin-remove">011.4544.2202</p>
+              </div>
+            </div>
+            <div>
+              <div class="uk-card uk-card-default uk-card-body">
+                <h3 class="uk-card-title uk-margin-remove-bottom">NUCLEA</h3>
+                <p class="uk-text-meta uk-margin-remove"><time datetime="2016-04-01T19:00">Belgrano, Capital Federal</time></p>
+                <p class="uk-text uk-margin-remove">Ciudad de la Paz 2985</p>
+                <p class="uk-text uk-margin-remove">011.4544.2202</p>
+              </div>
+            </div>
+            <div>
+              <div class="uk-card uk-card-default uk-card-body">
+                <h3 class="uk-card-title uk-margin-remove-bottom">NUCLEA</h3>
+                <p class="uk-text-meta uk-margin-remove"><time datetime="2016-04-01T19:00">Belgrano, Capital Federal</time></p>
+                <p class="uk-text uk-margin-remove">Ciudad de la Paz 2985</p>
+                <p class="uk-text uk-margin-remove">011.4544.2202</p>
+              </div>
+            </div>
+            <div>
+              <div class="uk-card uk-card-default uk-card-body">
+                <h3 class="uk-card-title uk-margin-remove-bottom">NUCLEA</h3>
+                <p class="uk-text-meta uk-margin-remove"><time datetime="2016-04-01T19:00">Belgrano, Capital Federal</time></p>
+                <p class="uk-text uk-margin-remove">Ciudad de la Paz 2985</p>
+                <p class="uk-text uk-margin-remove">011.4544.2202</p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="uk-flex-center" uk-scrollspy="target: > div; cls: uk-animation-slide-left-medium" uk-grid>
+            <div>
+              <div class="uk-card uk-card-default uk-card-body">
+                <h3 class="uk-card-title uk-margin-remove-bottom">NUCLEA</h3>
+                <p class="uk-text-meta uk-margin-remove"><time datetime="2016-04-01T19:00">Belgrano, Capital Federal</time></p>
+                <p class="uk-text uk-margin-remove">Ciudad de la Paz 2985</p>
+                <p class="uk-text uk-margin-remove">011.4544.2202</p>
+              </div>
+            </div>
+            <div>
+              <div class="uk-card uk-card-default uk-card-body">
+                <h3 class="uk-card-title uk-margin-remove-bottom">NUCLEA</h3>
+                <p class="uk-text-meta uk-margin-remove"><time datetime="2016-04-01T19:00">Belgrano, Capital Federal</time></p>
+                <p class="uk-text uk-margin-remove">Ciudad de la Paz 2985</p>
+                <p class="uk-text uk-margin-remove">011.4544.2202</p>
+              </div>
+            </div>
+            <div>
+              <div class="uk-card uk-card-default uk-card-body">
+                <h3 class="uk-card-title uk-margin-remove-bottom">NUCLEA</h3>
+                <p class="uk-text-meta uk-margin-remove"><time datetime="2016-04-01T19:00">Belgrano, Capital Federal</time></p>
+                <p class="uk-text uk-margin-remove">Ciudad de la Paz 2985</p>
+                <p class="uk-text uk-margin-remove">011.4544.2202</p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="uk-flex-center" uk-scrollspy="target: > div; cls: uk-animation-slide-left-medium" uk-grid>
+            <div>
+              <div class="uk-card uk-card-default uk-card-body">
+                <h3 class="uk-card-title uk-margin-remove-bottom">NUCLEA</h3>
+                <p class="uk-text-meta uk-margin-remove"><time datetime="2016-04-01T19:00">Belgrano, Capital Federal</time></p>
+                <p class="uk-text uk-margin-remove">Ciudad de la Paz 2985</p>
+                <p class="uk-text uk-margin-remove">011.4544.2202</p>
+              </div>
+            </div>
+            <div>
+              <div class="uk-card uk-card-default uk-card-body">
+                <h3 class="uk-card-title uk-margin-remove-bottom">NUCLEA</h3>
+                <p class="uk-text-meta uk-margin-remove"><time datetime="2016-04-01T19:00">Belgrano, Capital Federal</time></p>
+                <p class="uk-text uk-margin-remove">Ciudad de la Paz 2985</p>
+                <p class="uk-text uk-margin-remove">011.4544.2202</p>
+              </div>
+            </div>
+            <div>
+              <div class="uk-card uk-card-default uk-card-body">
+                <h3 class="uk-card-title uk-margin-remove-bottom">NUCLEA</h3>
+                <p class="uk-text-meta uk-margin-remove"><time datetime="2016-04-01T19:00">Belgrano, Capital Federal</time></p>
+                <p class="uk-text uk-margin-remove">Ciudad de la Paz 2985</p>
+                <p class="uk-text uk-margin-remove">011.4544.2202</p>
+              </div>
+            </div>
+            <div>
+              <div class="uk-card uk-card-default uk-card-body">
+                <h3 class="uk-card-title uk-margin-remove-bottom">NUCLEA</h3>
+                <p class="uk-text-meta uk-margin-remove"><time datetime="2016-04-01T19:00">Belgrano, Capital Federal</time></p>
+                <p class="uk-text uk-margin-remove">Ciudad de la Paz 2985</p>
+                <p class="uk-text uk-margin-remove">011.4544.2202</p>
+              </div>
+            </div>
+            <div>
+              <div class="uk-card uk-card-default uk-card-body">
+                <h3 class="uk-card-title uk-margin-remove-bottom">NUCLEA</h3>
+                <p class="uk-text-meta uk-margin-remove"><time datetime="2016-04-01T19:00">Belgrano, Capital Federal</time></p>
+                <p class="uk-text uk-margin-remove">Ciudad de la Paz 2985</p>
+                <p class="uk-text uk-margin-remove">011.4544.2202</p>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="eba-footer" class="uk-section uk-section-secondary uk-padding-remove-bottom">
+    <div class="uk-container">
+      <div class="uk-grid uk-grid-large" data-uk-grid>
+        <div class="uk-width-1-2@m">
+          <h5>ESPECIFICOS BUENOS AIRES</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud cillum dolore eu fugiat nulla contact to: <a href="#" title="">info@company.com</a></p>
+          <div>
+            <a href="" class="uk-icon-button" data-uk-icon="twitter">TW</a>
+            <a href="" class="uk-icon-button" data-uk-icon="facebook">FB</a>
+            <a href="" class="uk-icon-button" data-uk-icon="instagram">IG</a>
+          </div>
+        </div>
+        <div class="uk-width-1-6@m">
+          <h5>PRODUCTS</h5>
+          <ul class="uk-list">
+            <li>proteccion solar</li>
+            <li>hidratacion</li>
+            <li>monodosis</li>
+          </ul>
+        </div>
+        <div class="uk-width-1-6@m">
+          <h5>OUR COMPANY</h5>
+          <ul class="uk-list">
+            <li>Team</li>
+            <li>Work</li>
+            <li>Culture</li>
+            <li>Contact Us</li>
+          </ul>
+        </div>
+        <div class="uk-width-1-6@m">
+          <h5>OUR OFFICES</h5>
+          <ul class="uk-list">
+            <li>Buenos Aires</li>
+            <li>Interior</li>
+            <li>Exterior</li>
+          </ul>
+        </div>
+        
+      </div>
+    </div>
+    
+    <div class="uk-text-center uk-padding uk-padding-remove-horizontal">
+      <span class="uk-text-small uk-text-muted">©2020 ESPECIFICOS Buenos Aires </span>
+    </div>
+  </footer>
+  <!-- /FOOTER -->
+  <!-- OFFCANVAS -->
+  <div id="offcanvas-nav" data-uk-offcanvas="flip: true; overlay: false">
+    <div class="uk-offcanvas-bar uk-offcanvas-bar-animation uk-offcanvas-slide">
+      <button class="uk-offcanvas-close uk-close uk-icon" type="button" data-uk-close></button>
+      <ul class="uk-nav uk-nav-default">
+        <li class="uk-active"><a href="#">Active</a></li>
+        <li class="uk-parent">
+          <a href="#">Parent</a>
+          <ul class="uk-nav-sub">
+            <li><a href="#">Sub item</a></li>
+            <li><a href="#">Sub item</a></li>
+          </ul>
+        </li>
+        <li class="uk-nav-header">Header</li>
+        <li><a href="#js-options"><span class="uk-margin-small-right uk-icon" data-uk-icon="icon: table"></span> Item</a></li>
+        <li><a href="#"><span class="uk-margin-small-right uk-icon" data-uk-icon="icon: thumbnails"></span> Item</a></li>
+        <li class="uk-nav-divider"></li>
+        <li><a href="#"><span class="uk-margin-small-right uk-icon" data-uk-icon="icon: trash"></span> Item</a></li>
+      </ul>
+      <h3>Title</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+  </div>
+
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
