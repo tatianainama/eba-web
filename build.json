@@ -1,0 +1,17 @@
+{
+  "subprojects": [
+    {
+      "name": "eba-site",
+      "dir": "eba-site",
+      "artifacts": [
+        "dist/"
+      ]
+    }, {
+      "name": "eba-server",
+      "dir": "server",
+      "artifacts": [
+        "lib/"
+      ]
+    }
+  ]
+}
