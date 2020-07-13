@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Nav = () => {
+const Nav = ({ children }) => {
   return (
     <div>
       <div className="nav" data-uk-sticky="cls-active: uk-background-default uk-box-shadow-medium; top: 10vh; animation: uk-animation-slide-top">
@@ -12,14 +12,12 @@ const Nav = () => {
               </div>
             </div>
             <div className="uk-navbar-right">
-              <ul className="uk-navbar-nav uk-visible@s">
-                <li className="uk-active uk-visible@m"><a href="" data-uk-icon="home"></a></li>
-                <li><a href="#us" data-uk-scroll>Nosotros</a></li>
-                <li>
-                  <a href="#products" data-uk-scroll>Productos</a>
-                </li>
-                <li><a href="#distribution" data-uk-scroll>Distribuidoras</a></li>
-                <li><a href="#eba-footer" data-uk-scroll>Contacto</a></li>
+              <ul className="uk-navbar-nav uk-visible@s"> 
+                {
+                  children.map((c, i ) => (
+                  <li key={i} className="">{c}</li>
+                  ))
+                }
               </ul>
               <a className="uk-navbar-toggle uk-navbar-item uk-hidden@s" data-uk-toggle data-uk-navbar-toggle-icon href="#offcanvas-nav"></a>
             </div>
