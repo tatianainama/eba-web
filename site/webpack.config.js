@@ -19,6 +19,12 @@ module.exports = {
       {
         test: /\.css$/,
         use: ["style-loader", "css-loader"]
+      },
+      {
+        test: /\.(png|svg|jpg|gif)$/,
+        use: [
+          'file-loader',
+        ],
       }
     ]
   },
@@ -26,6 +32,7 @@ module.exports = {
     alias: {
       pages: path.resolve(__dirname, 'src/pages'),
       components: path.resolve(__dirname, 'src/components'),
+      img: path.resolve(__dirname, 'src/img'),
       node_modules: path.resolve(__dirname, 'node_modules'),
       'react-dom': '@hot-loader/react-dom',
     },

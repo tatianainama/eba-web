@@ -1,4 +1,8 @@
 import React from 'react';
+import coverImg from 'img/cover-photo.jpg';
+import Productos from 'img/productos.png';
+import Protectores from 'img/protectores.png';
+import Monodosis from 'img/monodosis.png';
 
 const Home = () => {
   return (
@@ -11,7 +15,7 @@ const Home = () => {
             <p className="subtitle-text uk-visible@s uk-text-right">Productos profesionales, elaborados con normas de calidad internacional GMP, basados en sustancias activas concentradas de gran pureza y vehículos específicos altamente eficaces que permiten optimizar la belleza y cuidados personalizados de la piel, con base científica.</p>
           </div>
         </div>
-        {/* <img src="img/cover-photo.jpg" alt="" data-uk-cover data-uk-img data-uk-parallax="opacity: 1,0.1; easing:0"> */}
+        <img src={coverImg} alt="" data-uk-cover data-uk-img data-uk-parallax="opacity: 1,0.1; easing:0" />
       </div>
     </div>
 
@@ -42,7 +46,7 @@ const Home = () => {
           <li>
             <div className="uk-grid uk-child-width-1-2@l uk-flex-middle" data-uk-grid data-uk-scrollspy="target: > div; cls: uk-animation-slide-left-medium">
               <div>
-                {/* <img src="img/productos.png" data-src="img/productos.png" alt="" data-uk-img> */}
+                <img src={Productos} data-src={Productos} alt="" data-uk-img />
               </div>
               <div data-uk-scrollspy-class="uk-animation-slide-right-medium">
                 <h6 className="uk-text-primary">Aut fuga consequatur</h6>
@@ -58,7 +62,7 @@ const Home = () => {
           <li>
             <div className="uk-grid uk-child-width-1-2@l uk-flex-middle" data-uk-grid data-uk-scrollspy="target: > div; cls: uk-animation-slide-left-medium">
               <div>
-                {/* <img src="img/protectores.png" data-src="img/protectores.png" alt="" data-uk-img> */}
+                <img src={Protectores} data-src={Protectores} alt="" data-uk-img/>
               </div>
               <div data-uk-scrollspy-class="uk-animation-slide-right-medium">
                 <h6 className="uk-text-primary">Aut fuga consequatur</h6>
@@ -66,7 +70,7 @@ const Home = () => {
                 <p className="subtitle-text">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                   tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation.
+                  quis nostrud exercitation. 
                 </p>
               </div>
             </div>
@@ -74,7 +78,7 @@ const Home = () => {
           <li>
             <div className="uk-grid uk-child-width-1-2@l uk-flex-middle" data-uk-grid data-uk-scrollspy="target: > div; cls: uk-animation-slide-left-medium">
               <div>
-                {/* <img src="img/monodosis.png" data-src="img/monodosis.png" alt="" data-uk-img> */}
+                <img src={Monodosis} data-src={Monodosis} alt="" data-uk-img />
               </div>
               <div data-uk-scrollspy-class="uk-animation-slide-right-medium">
                 <h6 className="uk-text-primary">Aut fuga consequatur</h6>
@@ -91,168 +95,6 @@ const Home = () => {
         <div className="uk-flex uk-flex-center">
           <button className="uk-button uk-button-primary ">Catalogo</button>
         </div>
-      </div>
-    </section>
-  
-    <section id="distribution" className="uk-section uk-section-default">
-      <div className="uk-container">
-
-        <div className="uk-tile uk-light uk-tile-muted uk-text-center uk-margin-bottom eba-distribution-center uk-background-cover">
-          <p className="uk-h3">Casa Central</p>
-          <p className="uk-text uk-margin-remove">Leopoldo Marechal 914, Capital Federal</p>
-          <p className="uk-text uk-margin-remove">011.4139.6860/1</p>
-        </div>
-
-        <div className="uk-section uk-section-small uk-padding-small">
-          <ul className="uk-subnav uk-subnav-pill uk-flex uk-flex-center" data-uk-switcher="connect: .eba-distribution; animation: uk-animation-fade">
-            <li><a className="uk-border-pill" href="#">Capital Federal y GBA</a></li>
-            <li><a className="uk-border-pill" href="#">Interior del pais</a></li>
-            <li><a className="uk-border-pill" href="#">Internacional</a></li>
-          </ul>
-        </div>
-
-        <ul className="uk-switcher uk-margin eba-distribution">
-          <li>
-            <div className="uk-flex-center" uk-scrollspy="target: > div; cls: uk-animation-slide-left-medium" data-uk-grid>
-              <div>
-                <div className="uk-card uk-card uk-card-body">
-                  <h3 className="uk-card-title uk-margin-remove-bottom">NUCLEA</h3>
-                  <p className="uk-text-meta uk-margin-remove"><time dateTime="2016-04-01T19:00">Belgrano, Capital Federal</time></p>
-                  <p className="uk-text uk-margin-remove">Ciudad de la Paz 2985</p>
-                  <p className="uk-text uk-margin-remove">011.4544.2202</p>
-                </div>
-              </div>
-              <div>
-                <div className="uk-card uk-card uk-card-body">
-                  <h3 className="uk-card-title uk-margin-remove-bottom">NUCLEA</h3>
-                  <p className="uk-text-meta uk-margin-remove"><time dateTime="2016-04-01T19:00">Belgrano, Capital Federal</time></p>
-                  <p className="uk-text uk-margin-remove">Ciudad de la Paz 2985</p>
-                  <p className="uk-text uk-margin-remove">011.4544.2202</p>
-                </div>
-              </div>
-              <div>
-                <div className="uk-card uk-card uk-card-body">
-                  <h3 className="uk-card-title uk-margin-remove-bottom">NUCLEA</h3>
-                  <p className="uk-text-meta uk-margin-remove"><time dateTime="2016-04-01T19:00">Belgrano, Capital Federal</time></p>
-                  <p className="uk-text uk-margin-remove">Ciudad de la Paz 2985</p>
-                  <p className="uk-text uk-margin-remove">011.4544.2202</p>
-                </div>
-              </div>
-              <div>
-                <div className="uk-card uk-card uk-card-body">
-                  <h3 className="uk-card-title uk-margin-remove-bottom">NUCLEA</h3>
-                  <p className="uk-text-meta uk-margin-remove"><time dateTime="2016-04-01T19:00">Belgrano, Capital Federal</time></p>
-                  <p className="uk-text uk-margin-remove">Ciudad de la Paz 2985</p>
-                  <p className="uk-text uk-margin-remove">011.4544.2202</p>
-                </div>
-              </div>
-              <div>
-                <div className="uk-card uk-card uk-card-body">
-                  <h3 className="uk-card-title uk-margin-remove-bottom">NUCLEA</h3>
-                  <p className="uk-text-meta uk-margin-remove"><time dateTime="2016-04-01T19:00">Belgrano, Capital Federal</time></p>
-                  <p className="uk-text uk-margin-remove">Ciudad de la Paz 2985</p>
-                  <p className="uk-text uk-margin-remove">011.4544.2202</p>
-                </div>
-              </div>
-              <div>
-                <div className="uk-card uk-card uk-card-body">
-                  <h3 className="uk-card-title uk-margin-remove-bottom">NUCLEA</h3>
-                  <p className="uk-text-meta uk-margin-remove"><time dateTime="2016-04-01T19:00">Belgrano, Capital Federal</time></p>
-                  <p className="uk-text uk-margin-remove">Ciudad de la Paz 2985</p>
-                  <p className="uk-text uk-margin-remove">011.4544.2202</p>
-                </div>
-              </div>
-              <div>
-                <div className="uk-card uk-card uk-card-body">
-                  <h3 className="uk-card-title uk-margin-remove-bottom">NUCLEA</h3>
-                  <p className="uk-text-meta uk-margin-remove"><time dateTime="2016-04-01T19:00">Belgrano, Capital Federal</time></p>
-                  <p className="uk-text uk-margin-remove">Ciudad de la Paz 2985</p>
-                  <p className="uk-text uk-margin-remove">011.4544.2202</p>
-                </div>
-              </div>
-              <div>
-                <div className="uk-card uk-card uk-card-body">
-                  <h3 className="uk-card-title uk-margin-remove-bottom">NUCLEA</h3>
-                  <p className="uk-text-meta uk-margin-remove"><time dateTime="2016-04-01T19:00">Belgrano, Capital Federal</time></p>
-                  <p className="uk-text uk-margin-remove">Ciudad de la Paz 2985</p>
-                  <p className="uk-text uk-margin-remove">011.4544.2202</p>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div className="uk-flex-center" uk-scrollspy="target: > div; cls: uk-animation-slide-left-medium" data-uk-grid>
-              <div>
-                <div className="uk-card uk-card uk-card-body">
-                  <h3 className="uk-card-title uk-margin-remove-bottom">NUCLEA</h3>
-                  <p className="uk-text-meta uk-margin-remove"><time dateTime="2016-04-01T19:00">Belgrano, Capital Federal</time></p>
-                  <p className="uk-text uk-margin-remove">Ciudad de la Paz 2985</p>
-                  <p className="uk-text uk-margin-remove">011.4544.2202</p>
-                </div>
-              </div>
-              <div>
-                <div className="uk-card uk-card uk-card-body">
-                  <h3 className="uk-card-title uk-margin-remove-bottom">NUCLEA</h3>
-                  <p className="uk-text-meta uk-margin-remove"><time dateTime="2016-04-01T19:00">Belgrano, Capital Federal</time></p>
-                  <p className="uk-text uk-margin-remove">Ciudad de la Paz 2985</p>
-                  <p className="uk-text uk-margin-remove">011.4544.2202</p>
-                </div>
-              </div>
-              <div>
-                <div className="uk-card uk-card uk-card-body">
-                  <h3 className="uk-card-title uk-margin-remove-bottom">NUCLEA</h3>
-                  <p className="uk-text-meta uk-margin-remove"><time dateTime="2016-04-01T19:00">Belgrano, Capital Federal</time></p>
-                  <p className="uk-text uk-margin-remove">Ciudad de la Paz 2985</p>
-                  <p className="uk-text uk-margin-remove">011.4544.2202</p>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div className="uk-flex-center" uk-scrollspy="target: > div; cls: uk-animation-slide-left-medium" data-uk-grid>
-              <div>
-                <div className="uk-card uk-card uk-card-body">
-                  <h3 className="uk-card-title uk-margin-remove-bottom">NUCLEA</h3>
-                  <p className="uk-text-meta uk-margin-remove"><time dateTime="2016-04-01T19:00">Belgrano, Capital Federal</time></p>
-                  <p className="uk-text uk-margin-remove">Ciudad de la Paz 2985</p>
-                  <p className="uk-text uk-margin-remove">011.4544.2202</p>
-                </div>
-              </div>
-              <div>
-                <div className="uk-card uk-card uk-card-body">
-                  <h3 className="uk-card-title uk-margin-remove-bottom">NUCLEA</h3>
-                  <p className="uk-text-meta uk-margin-remove"><time dateTime="2016-04-01T19:00">Belgrano, Capital Federal</time></p>
-                  <p className="uk-text uk-margin-remove">Ciudad de la Paz 2985</p>
-                  <p className="uk-text uk-margin-remove">011.4544.2202</p>
-                </div>
-              </div>
-              <div>
-                <div className="uk-card uk-card uk-card-body">
-                  <h3 className="uk-card-title uk-margin-remove-bottom">NUCLEA</h3>
-                  <p className="uk-text-meta uk-margin-remove"><time dateTime="2016-04-01T19:00">Belgrano, Capital Federal</time></p>
-                  <p className="uk-text uk-margin-remove">Ciudad de la Paz 2985</p>
-                  <p className="uk-text uk-margin-remove">011.4544.2202</p>
-                </div>
-              </div>
-              <div>
-                <div className="uk-card uk-card uk-card-body">
-                  <h3 className="uk-card-title uk-margin-remove-bottom">NUCLEA</h3>
-                  <p className="uk-text-meta uk-margin-remove"><time dateTime="2016-04-01T19:00">Belgrano, Capital Federal</time></p>
-                  <p className="uk-text uk-margin-remove">Ciudad de la Paz 2985</p>
-                  <p className="uk-text uk-margin-remove">011.4544.2202</p>
-                </div>
-              </div>
-              <div>
-                <div className="uk-card uk-card uk-card-body">
-                  <h3 className="uk-card-title uk-margin-remove-bottom">NUCLEA</h3>
-                  <p className="uk-text-meta uk-margin-remove"><time dateTime="2016-04-01T19:00">Belgrano, Capital Federal</time></p>
-                  <p className="uk-text uk-margin-remove">Ciudad de la Paz 2985</p>
-                  <p className="uk-text uk-margin-remove">011.4544.2202</p>
-                </div>
-              </div>
-            </div>
-          </li>
-        </ul>
       </div>
     </section>
 
