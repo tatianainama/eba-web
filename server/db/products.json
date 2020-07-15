@@ -237,7 +237,7 @@
         "code": 2008,
         "content": "250 ml.",
         "price": 290,
-        "sellPrice": ""
+        "sellPrice": 0
       }
     ],
     "image": "exfoliating-250.png",
@@ -375,7 +375,7 @@
         "sellPrice": 0
       }
     ],
-    "image": "micropeeling.png",
+    "image": "micropeeling-30.png",
     "apply": "Aplicar sobre piel limpia, luego de retirar ExfoliatingScrub, trabajar las zonas de manchas cutáneas en forma suave y circular durante tres a cinco minutos, extender a toda la piel del rostro y cuello. Dejar actuar durante cinco minutos y sin retirar aplicar SpecificMasck. Dejar actuar quince minutos y retirar mediante esponja y agua.",
     "lang": "es"
   },
@@ -788,6 +788,7 @@
         "sellPrice": 1166
       }
     ],
+    "image": "skin-dose-caja.png",
     "apply": "Aplicación: trabajar en forma circular en las manchas o tratar zonas con irregularidades pigmentarias, luego extender a toda la piel.",
     "lang": "es"
   },
@@ -812,7 +813,7 @@
         "sellPrice": 1000
       }
     ],
-    "image": "skin-dose-caja.png",
+    "image": "biodose-caja.png",
     "apply": "aplicar por la mañana y por la noche",
     "lang": "es"
   },
