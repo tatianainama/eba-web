@@ -1,4 +1,5 @@
 import React from 'react';
+import Logo from 'img/horizontal.svg';
 
 const Nav = ({ children }) => {
   return (
@@ -8,7 +9,7 @@ const Nav = ({ children }) => {
           <nav className="uk-navbar uk-navbar-container uk-navbar-transparent" data-uk-navbar>
             <div className="uk-navbar-left">
               <div className="uk-navbar-item uk-padding-remove-horizontal">
-                {/* <a className="uk-logo" title="Logo" href=""><img src="img/horizontal.svg" alt="home"/></a> */}
+                <a className="uk-logo" title="Logo" href=""><img src={Logo} alt="home"/></a>
               </div>
             </div>
             <div className="uk-navbar-right">
