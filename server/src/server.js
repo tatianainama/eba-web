@@ -13,10 +13,10 @@ const port = process.env.PORT || 3004;
 MongoClient.connect(process.env.DB_URL, { useUnifiedTopology: true }).then(client => {
   console.log("connected succesfully to db");
   const db = client.db(process.env.DB_NAME);
-  initDB(db);
-  return db;
+  return initDB(db);
 }).then(db => {
   app.use(cors());
+  app.use(express.static('public'));
   app.use('/products', productRouter(db));
   app.get('/', (req, res) => res.send('hi'));
   app.listen(port, () => {

@@ -21,6 +21,7 @@ const createCollection = (db) => async (collectionName, data) => {
 const initDB = async (db) => {
   await createCollection(db)('products', PRODUCTS);
   await createCollection(db)('distributors', DISTRIBUTORS);
+  return db;
 }
 
 export default initDB;
