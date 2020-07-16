@@ -1,0 +1,32 @@
+.eba-card.uk-card {
+  display: grid;
+  grid-template-rows: 2fr 0.5fr;
+  height: 100%;
+}
+
+.eba-card.uk-card-muted,
+.eba-card.uk-card-muted:hover,
+.eba-card.uk-card-muted:active {
+  background-color: #fbfbfb;
+}
+
+.eba-card.uk-card-muted:hover {
+  cursor: pointer;
+}
+
+.eba-card .uk-card-media-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  max-height: 320px;
+}
+
+.eba-card.uk-card uk-card-title {
+  font-size: 20px;
+}
+.eba-card .uk-card-media-top img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}

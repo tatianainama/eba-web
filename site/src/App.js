@@ -3,6 +3,7 @@ import { hot } from 'react-hot-loader';
 import React, { Component } from 'react';
 import { Router, Link } from '@reach/router';
 import UIkit from 'uikit';
+import Icons from 'node_modules/uikit/dist/js/uikit-icons';
 
 import Home from 'pages/home';
 import Products from 'pages/Products';

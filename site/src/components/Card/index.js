@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import './styles.css';
+
 const Card = ({
   color,
   size = 'small',
@@ -9,11 +11,12 @@ const Card = ({
   media,
   onClick,
   children,
+  className,
   ...props
 }) => {
   return (
     <div
-      className={`uk-card ${color ? `uk-card-${color}` : ''} ${onClick ? 'uk-card-hover' : ''} uk-card-${size}`} 
+      className={`eba-card uk-card ${color ? `uk-card-${color}` : ''} ${onClick ? 'uk-card-hover' : ''} uk-card-${size} ${className || ''}`} 
       onClick={onClick || (() => {})}
       {...props}
     >
@@ -25,7 +28,7 @@ const Card = ({
         ) : null
       }
       <div className='uk-card-body'>
-        <h3 className='uk-card-title'>{title}</h3>
+        <h4 className='uk-card-title'>{title}</h4>
         { subtitle ? (
           <p className='uk-text-meta uk-margin-remove-top'> {subtitle} </p>
         ) : null }
@@ -36,7 +39,7 @@ const Card = ({
 };
 
 Card.propTypes = {
-  color: PropTypes.oneOf(['default', 'primary', 'secondary']),
+  color: PropTypes.oneOf(['default', 'primary', 'secondary', 'muted']),
   size: PropTypes.oneOf(['small', 'large']),
   title: PropTypes.string,
   subtitle: PropTypes.string,

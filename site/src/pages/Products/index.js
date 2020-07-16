@@ -8,18 +8,19 @@ import './styles.css';
 
 const ProductsList = ({ products }) => {
   return (
-    <div className="eba-products-list">
+    <div className="eba-products-list uk-child-width-1-2@s uk-child-width-1-4@m uk-text-center" data-uk-grid data-uk-height-match="target: > div > .uk-card">
       {
         products.map(product => (
-          <Card
-            key={product._id}
-            size='small'
-            title={product.name}
-            onClick={() => {console.log(product._id)}}
-            media={product.image ? `http://localhost:3000/images/${product.image}` : undefined}
-          >
-            <p>{product.desc}</p>
-          </Card>
+          <div key={product._id}>
+            <Card
+              color="muted"
+              size='small'
+              title={product.name}
+              onClick={() => {console.log(product._id)}}
+              media={product.image ? `http://localhost:3000/images/${product.image}` : undefined}
+            >
+            </Card>
+          </div>
         ))
       }
     </div>
@@ -54,7 +55,7 @@ const Products = ({
       <h2>Productos</h2>
       <div data-uk-grid>
         <div className="uk-width-auto@m">
-            <ul className="uk-tab-left" data-uk-tab="connect: #component-tab-left; animation: uk-animation-fade">
+            <ul id="eba-products-category" className="uk-tab-left" data-uk-tab="connect: #component-tab-left; animation: uk-animation-fade">
                 <li><a href="#eba-products" data-uk-scroll>Ver Todos</a></li>
                 {
                   categories.map(({ name }) => (
