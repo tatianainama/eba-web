@@ -1,8 +1,8 @@
 {
   "subprojects": [
     {
-      "name": "eba-site",
-      "dir": "eba-site",
+      "name": "site",
+      "dir": "site",
       "artifacts": [
         "dist/"
       ]
