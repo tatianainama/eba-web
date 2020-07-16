@@ -6,6 +6,26 @@ import Card from 'components/Card';
 
 import './products.css';
 
+const ProductsList = ({ products }) => {
+  return (
+    <div className="eba-products-list">
+      {
+        products.map(product => (
+          <Card
+            key={product._id}
+            size='small'
+            title={product.name}
+            onClick={() => {console.log(product._id)}}
+            media={product.image ? `http://localhost:3000/images/${product.image}` : undefined}
+          >
+            <p>{product.desc}</p>
+          </Card>
+        ))
+      }
+    </div>
+  )
+};
+
 const Products = ({
   products
 }) => {
@@ -48,40 +68,12 @@ const Products = ({
         <div className="uk-width-expand@m">
             <ul id="component-tab-left" className="uk-switcher">
                 <li>
-                  <div className="eba-products-list">
-                  {
-                    products.map(product => (
-                      <Card
-                        key={product._id}
-                        size='small'
-                        title={product.name}
-                        onClick={() => {console.log(product._id)}}
-                        media={product.image ? `http://localhost:3000/images/${product.image}` : undefined}
-                      >
-                        <p>{product.desc}</p>
-                      </Card>
-                    ))
-                  }
-                  </div>
+                  <ProductsList products={products} />
                 </li>
                 {
                   categories.map(({name, products}) => (
                     <li key={name}>
-                      <div className="eba-products-list">
-                        {
-                          products.map(product => (
-                            <Card
-                              key={product._id}
-                              size='small'
-                              title={product.name}
-                              onClick={() => {console.log(product._id)}}
-                              media={product.image ? `http://localhost:3000/images/${product.image}` : undefined}
-                            >
-                              <p>{product.desc}</p>
-                            </Card>
-                          ))
-                        }
-                      </div>
+                      <ProductsList products={products} />
                     </li>
                   ))
                 }
