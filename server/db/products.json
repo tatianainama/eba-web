@@ -557,7 +557,7 @@
         "code": 2023,
         "content": "130 ml.",
         "price": 210,
-        "sellPrice": ""
+        "sellPrice": 0
       }
     ],
     "image": "activo1.png",
@@ -580,7 +580,7 @@
         "code": 2024,
         "content": "130 ml.",
         "price": 200,
-        "sellPrice": ""
+        "sellPrice": 0
       }
     ],
     "image": "activo2.png",
@@ -605,7 +605,7 @@
         "code": 2025,
         "content": "130 ml.",
         "price": 190,
-        "sellPrice": ""
+        "sellPrice": 0
       }
     ],
     "image": "activo3.png",
@@ -628,7 +628,7 @@
         "code": 2026,
         "content": "130 ml.",
         "price": 210,
-        "sellPrice": ""
+        "sellPrice": 0
       }
     ],
     "image": "activo4.png",
@@ -650,7 +650,7 @@
         "code": 2027,
         "content": "130 ml.",
         "price": 200,
-        "sellPrice": ""
+        "sellPrice": 0
       }
     ],
     "image": "activo5.png",
@@ -673,7 +673,7 @@
         "code": 2028,
         "content": "130 ml.",
         "price": 190,
-        "sellPrice": ""
+        "sellPrice": 0
       }
     ],
     "image": "activo6.png",
@@ -702,23 +702,11 @@
         "code": 2029,
         "content": "130 ml.",
         "price": 200,
-        "sellPrice": ""
+        "sellPrice": 0
       }
     ],
     "image": "activo7.png",
     "apply": "Apoyo domiciliario: Aplicar antes de hacer ejercicio y después de ducharse. Indicada para todo tipo de piel",
-    "lang": "es"
-  },
-  {
-    "name": "Tester de Hidratación",
-    "variants": [
-      {
-        "code": 8000,
-        "content": "",
-        "price": 1590,
-        "sellPrice": ""
-      }
-    ],
     "lang": "es"
   },
   {
@@ -1047,7 +1035,7 @@
         "code": 2042,
         "content": "200 ml",
         "price": 370,
-        "sellPrice": ""
+        "sellPrice": 0
       }
     ],
     "image": "dda1.png",
@@ -1073,7 +1061,7 @@
         "code": 2043,
         "content": "200 ml",
         "price": 370,
-        "sellPrice": ""
+        "sellPrice": 0
       }
     ],
     "image": "dda2.png",
@@ -1211,6 +1199,9 @@
         "sellPrice": 700
       }
     ],
+    "category": [
+      "Corporales"
+    ],
     "image": "masajes-dermo-corp.png",
     "lang": "es"
   },
@@ -1223,6 +1214,9 @@
         "price": 360,
         "sellPrice": 720
       }
+    ],
+    "category": [
+      "Corporales"
     ],
     "image": "masajes-lift-corp.png",
     "lang": "es"
@@ -1335,7 +1329,7 @@
         "code": 9000,
         "content": "150 ml.",
         "price": 280,
-        "sellPrice": ""
+        "sellPrice": 0
       }
     ],
     "lang": "es"
@@ -1354,7 +1348,7 @@
         "code": 9001,
         "content": "150 ml.",
         "price": 270,
-        "sellPrice": ""
+        "sellPrice": 0
       }
     ],
     "lang": "es"
