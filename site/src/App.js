@@ -5,7 +5,7 @@ import { Router, Link } from '@reach/router';
 import UIkit from 'uikit';
 
 import Home from 'pages/home';
-import Products from 'pages/products';
+import Products from 'pages/Products';
 import Distribution from 'pages/distribution';
 import Contact from 'pages/contact';
 

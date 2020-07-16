@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import Section from 'components/Section';
 import Card from 'components/Card';
 
-import './products.css';
+import './styles.css';
 
 const ProductsList = ({ products }) => {
   return (
