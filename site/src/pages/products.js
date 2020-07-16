@@ -9,23 +9,85 @@ import './products.css';
 const Products = ({
   products
 }) => {
+
+  const categories = [
+    "Protección Intensiva",
+    "Higiene",
+    "Máscaras",
+    "Peeling",
+    "Ácido Hialurónico",
+    "Hombres",
+    "Activos Concentrados",
+    "Monodosis",
+    "Protección Solar",
+    "Corporales",
+    "Therapy Rituals"
+  ].map(category => {
+    return {
+      name: category,
+      products: products.filter(product => product.category.includes(category))
+    }
+  });
+
   return (
-    <Section>
-      <h2>Products</h2>
-      <div className="eba-products-list">
-        {
-          products.map(product => (
-            <Card
-              key={product._id}
-              size='small'
-              title={product.name}
-              onClick={() => {console.log(product._id)}}
-              media={product.image ? `http://localhost:3000/images/${product.image}` : undefined}
-            >
-              <p>{product.desc}</p>
-            </Card>
-          ))
-        }
+    <Section id="eba-products">
+      <h2>Productos</h2>
+      <div data-uk-grid>
+        <div className="uk-width-auto@m">
+            <ul className="uk-tab-left" data-uk-tab="connect: #component-tab-left; animation: uk-animation-fade">
+                <li><a href="#eba-products" data-uk-scroll>Ver Todos</a></li>
+                {
+                  categories.map(({ name }) => (
+                    <li key={name}>
+                      <a href="#eba-products" data-uk-scroll>{name}</a>
+                    </li>
+                  ))
+                }
+            </ul>
+        </div>
+        <div className="uk-width-expand@m">
+            <ul id="component-tab-left" className="uk-switcher">
+                <li>
+                  <div className="eba-products-list">
+                  {
+                    products.map(product => (
+                      <Card
+                        key={product._id}
+                        size='small'
+                        title={product.name}
+                        onClick={() => {console.log(product._id)}}
+                        media={product.image ? `http://localhost:3000/images/${product.image}` : undefined}
+                      >
+                        <p>{product.desc}</p>
+                      </Card>
+                    ))
+                  }
+                  </div>
+                </li>
+                {
+                  categories.map(({name, products}) => (
+                    <li key={name}>
+                      <div className="eba-products-list">
+                        {
+                          products.map(product => (
+                            <Card
+                              key={product._id}
+                              size='small'
+                              title={product.name}
+                              onClick={() => {console.log(product._id)}}
+                              media={product.image ? `http://localhost:3000/images/${product.image}` : undefined}
+                            >
+                              <p>{product.desc}</p>
+                            </Card>
+                          ))
+                        }
+                      </div>
+                    </li>
+                  ))
+                }
+            </ul>
+      </div>
+        
       </div>
     </Section>
   )
