@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from '@reach/router';
 
+import GetData from 'services/getData.js';
+
 class ProductDetail extends React.Component {
   constructor (props) {
     super(props);
@@ -11,16 +13,10 @@ class ProductDetail extends React.Component {
 
   componentDidMount() {
     if(this.state.product === undefined) {
-      const request = new Request(`http://localhost:3000/products/${this.props.productId}`);
-      fetch(request)
-      .then(response => {
-        if (response.status === 200) {
-          return response.json();
-        }
-      }).then(product => {
-        console.log(product);
+      GetData(`/products/${this.props.productId}`)
+      .then(product => {
         this.setState({ product })
-      })
+      });
     }
   }
 

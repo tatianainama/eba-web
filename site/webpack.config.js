@@ -1,5 +1,6 @@
 const path = require("path");
 const webpack = require("webpack");
+const Dotenv = require('dotenv-webpack');
 
 module.exports = {
   entry: ["react-hot-loader/patch", "./src/index.js"],
@@ -8,6 +9,9 @@ module.exports = {
   watchOptions: {
     poll: 1000
   },
+  plugins: [
+    new Dotenv()
+  ],
   module: {
     rules: [
       {
@@ -32,6 +36,7 @@ module.exports = {
     alias: {
       pages: path.resolve(__dirname, 'src/pages'),
       components: path.resolve(__dirname, 'src/components'),
+      services: path.resolve(__dirname, 'src/services'),
       img: path.resolve(__dirname, 'src/img'),
       node_modules: path.resolve(__dirname, 'node_modules'),
       'react-dom': '@hot-loader/react-dom',

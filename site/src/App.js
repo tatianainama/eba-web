@@ -5,6 +5,8 @@ import { Router, Link } from '@reach/router';
 import UIkit from 'uikit';
 import Icons from 'node_modules/uikit/dist/js/uikit-icons';
 
+import GetData from 'services/getData.js';
+
 import Home from 'pages/home';
 import ProductsHome from 'pages/Products';
 import Distribution from 'pages/distribution';
@@ -31,16 +33,10 @@ class App extends Component {
   }
 
   componentDidMount() {
-    const request = new Request('http://localhost:3000/products');
-    fetch(request)
-      .then(response => {
-        if (response.status === 200) {
-          return response.json();
-        }
-      }).then(products => {
-        console.log(products);
-        this.setState({ products })
-      })
+    GetData('/products')
+    .then(products => {
+      this.setState({ products })
+    })
   }
 
   render(){
