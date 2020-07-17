@@ -1,12 +1,9 @@
-.eba-products-list {
-  /* display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 1fr;
-  column-gap: 1rem;
-  row-gap: 1rem; */
-}
 
 #eba-products-category {
   position: sticky;
   top: 100px;
+}
+
+#eba-products-category.uk-tab-left > .uk-active > a {
+  background-color: #fbfbfb;
 }

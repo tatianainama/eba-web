@@ -6,7 +6,7 @@ import UIkit from 'uikit';
 import Icons from 'node_modules/uikit/dist/js/uikit-icons';
 
 import Home from 'pages/home';
-import Products from 'pages/Products';
+import ProductsHome from 'pages/Products';
 import Distribution from 'pages/distribution';
 import Contact from 'pages/contact';
 
@@ -15,6 +15,12 @@ import Section from 'components/Section';
 
 import 'node_modules/uikit/dist/css/uikit.min.css'
 import "./App.css";
+
+const BasePath = ({children}) => (
+  <>
+  {children}
+  </>
+);
 
 class App extends Component {
   constructor (props) {
@@ -48,7 +54,7 @@ class App extends Component {
         </Navbar>
         <Router primary={false}>
           <Home path="/"/>
-          <Products path="productos" products={this.state.products} />
+          <ProductsHome path="productos/*" products={this.state.products} />
           <Distribution path="distribuidoras"/>
           <Contact path="contacto"/>
         </Router>

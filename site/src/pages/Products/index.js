@@ -1,8 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Router, navigate } from '@reach/router';
 
 import Section from 'components/Section';
 import Card from 'components/Card';
+import ProductDetail from 'components/ProductDetail';
 
 import './styles.css';
 
@@ -16,7 +18,7 @@ const ProductsList = ({ products }) => {
               color="muted"
               size='small'
               title={product.name}
-              onClick={() => {console.log(product._id)}}
+              onClick={() => { navigate(`/productos/${product._id}`, { state: { product }}) }}
               media={product.image ? `http://localhost:3000/images/${product.image}` : undefined}
             >
             </Card>
@@ -28,7 +30,7 @@ const ProductsList = ({ products }) => {
 };
 
 const Products = ({
-  products
+  products,
 }) => {
 
   const categories = [
@@ -51,12 +53,10 @@ const Products = ({
   });
 
   return (
-    <Section id="eba-products">
-      <h2>Productos</h2>
+    <div>
       <div data-uk-grid>
         <div className="uk-width-auto@m">
             <ul id="eba-products-category" className="uk-tab-left" data-uk-tab="connect: #component-tab-left; animation: uk-animation-fade">
-                <li><a href="#eba-products" data-uk-scroll>Ver Todos</a></li>
                 {
                   categories.map(({ name }) => (
                     <li key={name}>
@@ -64,13 +64,11 @@ const Products = ({
                     </li>
                   ))
                 }
+                <li><a href="#eba-products" data-uk-scroll>Ver Todos</a></li>
             </ul>
         </div>
         <div className="uk-width-expand@m">
             <ul id="component-tab-left" className="uk-switcher">
-                <li>
-                  <ProductsList products={products} />
-                </li>
                 {
                   categories.map(({name, products}) => (
                     <li key={name}>
@@ -78,15 +76,26 @@ const Products = ({
                     </li>
                   ))
                 }
+                <li>
+                  <ProductsList products={products} />
+                </li>
             </ul>
+        </div>
       </div>
-        
-      </div>
-    </Section>
+    </div>
   )
 }
 
-Products.propTypes = {
+const ProductsHome = ({ products }) => (
+  <Section id="eba-products">
+    <Router>
+      <Products products={products} path="/"></Products>
+      <ProductDetail path=":productId"></ProductDetail>
+    </Router>
+  </Section>
+);
+
+ProductsHome.propTypes = {
   products: PropTypes.arrayOf(PropTypes.shape({
     _id: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
@@ -108,4 +117,4 @@ Products.propTypes = {
   }))
 }
 
-export default Products;
+export default ProductsHome;
