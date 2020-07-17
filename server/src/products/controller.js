@@ -21,7 +21,21 @@ const getProduct = (db) => (req, res, next) => {
   })
 }
 
+const getByCategory = (db) => ({ body }, res) => {
+  const collection = db.collection('products');
+  const category = body.category;
+  const query = category === undefined ? {} : {
+    category: { '$elemMatch': { '$eq': category }}
+  }
+  return collection.find(query).toArray().then(products => {
+    res.json(products)
+  }).catch(error => {
+    res.status(500).json({error: error})
+  })
+}
+
 export {
   getAllProducts,
-  getProduct
+  getProduct,
+  getByCategory
 }

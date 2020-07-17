@@ -3,6 +3,7 @@ import dotenv from 'dotenv'
 import { MongoClient } from 'mongodb';
 import initDB from '../db';
 import productRouter from './products/routes';
+import bodyParser from 'body-parser';
 import cors from 'cors';
 
 dotenv.config();
@@ -16,6 +17,7 @@ MongoClient.connect(process.env.DB_URL, { useUnifiedTopology: true }).then(clien
   return initDB(db);
 }).then(db => {
   app.use(cors());
+  app.use(bodyParser.json());
   app.use(express.static('public'));
   app.use('/products', productRouter(db));
   app.get('/', (req, res) => res.send('hi'));
