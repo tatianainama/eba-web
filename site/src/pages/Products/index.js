@@ -1,12 +1,16 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { Router, navigate } from '@reach/router';
 
 import Section from 'components/Section';
 import Card from 'components/Card';
-import ProductDetail from 'components/ProductDetail';
+import Link from 'components/Link';
+
+import { getByCategory, getByName } from 'services/products.js';
 
 const API = process.env.API || '/';
+const ParseData = (data) => data.replace(/ /g, '_');
+const UnparseData = (data) => data.replace(/_/g, ' ');
 
 import './styles.css';
 
@@ -20,7 +24,7 @@ const ProductsList = ({ products }) => {
               color="muted"
               size='small'
               title={product.name}
-              onClick={() => { navigate(`/productos/${product._id}`, { state: { product }}) }}
+              onClick={() => { navigate(`/productos/detalle/${ParseData(product.name)}`) }}
               media={product.image ? `${API}/images/${product.image}` : undefined}
             >
             </Card>
@@ -31,10 +35,57 @@ const ProductsList = ({ products }) => {
   )
 };
 
-const Products = ({
-  products,
-}) => {
+const Details = ({ productName, ...props }) => {
+  const [ product, setProduct ] = useState(undefined);
+  console.log(props);
+  useEffect(() => {
+    getByName(UnparseData(productName)).then(product => setProduct(product));
+  }, [ productName ]);
 
+  return (
+    <div>
+      {
+        product && (
+          <div>
+            {product.name} 
+          </div>
+        )
+      }
+    </div>
+  )
+}
+
+const ProductsHome = () => (
+  <Section id="eba-products">
+    <Router>
+      <CategoriesHome path="/">
+        <ProductList path="/*categoryName"/>
+      </CategoriesHome>
+      <Details path="detalle/:productName" />
+    </Router>
+  </Section>
+);
+
+const ProductList = ({ categoryName }) => {
+  const category = categoryName ? UnparseData(categoryName) : 'all';
+  const [ products, setProducts ] = useState(undefined);
+
+  useEffect(() => {
+    getByCategory(category).then(result => {
+      setProducts(result);
+    })
+  }, [category]);
+
+  return (
+    <div>
+      {
+        products && (<ProductsList products={products}/>)
+      }
+    </div>
+  )
+}
+
+const CategoriesHome = ({ location, children }) => {
   const categories = [
     "Protección Intensiva",
     "Higiene",
@@ -47,64 +98,30 @@ const Products = ({
     "Protección Solar",
     "Corporales",
     "Therapy Rituals"
-  ].map(category => {
-    return {
-      name: category,
-      products: products.filter(product => product.category.includes(category))
-    }
-  });
+  ];
 
   return (
     <div>
       <div data-uk-grid>
         <div className="uk-width-auto@m">
-            <ul id="eba-products-category" className="uk-tab-left" data-uk-tab="connect: #component-tab-left; animation: uk-animation-fade">
-                {
-                  categories.map(({ name }) => (
-                    <li key={name}>
-                      <a href="#eba-products" data-uk-scroll>{name}</a>
-                    </li>
-                  ))
-                }
-                <li><a href="#eba-products" data-uk-scroll>Ver Todos</a></li>
-            </ul>
+          <ul className="uk-tab-left uk-tab">
+            {
+              categories.map((name) => (
+                <li key={name}>
+                  <Link to={ParseData(name)}>{name}</Link>
+                </li>
+              ))
+            }
+          </ul>
         </div>
         <div className="uk-width-expand@m">
-            <ul id="component-tab-left" className="uk-switcher">
-              {
-                categories.map(({name, products}) => (
-                  <li key={name}>
-                    <ProductsList products={products} />
-                  </li>
-                ))
-              }
-              <li>
-                <ProductsList products={products} />
-              </li>
-            </ul>
+          { children }
         </div>
       </div>
     </div>
   )
 }
 
-const ProductsHome = ({ products }) => (
-  <Section id="eba-products">
-    <Router>
-      <Products products={products} path="/"></Products>
-      <ProductDetail path=":productId"></ProductDetail>
-    </Router>
-  </Section>
-);
-
-// class ProductsHome extends React.Component {
-//   contructor(props) {
-//     super(props);
-//     this.state = {
-//       products: []
-//     }
-//   }
-// }
 ProductsHome.propTypes = {
   products: PropTypes.arrayOf(PropTypes.shape({
     _id: PropTypes.string.isRequired,

@@ -4,6 +4,9 @@
   top: 100px;
 }
 
-#eba-products-category.uk-tab-left > .uk-active > a {
+#eba-products-category.uk-tab-left > .uk-active > a,
+.uk-tab-left  a.eba-active {
   background-color: #fbfbfb;
+  color: #333;
+  border-color: #1e87f0;
 }

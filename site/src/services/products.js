@@ -7,16 +7,16 @@ const getAll = () => {
   });
 }
 
-const getById = (id) => {
-  return GetData(`/products/${id}`);
+const getByName = (name) => {
+  return GetData(`/products/${name}`);
 }
 
 const getByCategory = (categoryName) => {
-  return GetData('/products/category', { category: categoryName })
+  return GetData(`/products/category/${categoryName || 'all'}`)
 }
 
 export {
   getAll,
-  getById,
+  getByName,
   getByCategory
 }

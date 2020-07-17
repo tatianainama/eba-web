@@ -27,16 +27,7 @@ const BasePath = ({children}) => (
 class App extends Component {
   constructor (props) {
     super(props);
-    this.state = {
-      products: []
-    };
-  }
-
-  componentDidMount() {
-    GetData('/products')
-    .then(products => {
-      this.setState({ products })
-    })
+    this.state = {};
   }
 
   render(){
@@ -50,7 +41,7 @@ class App extends Component {
         </Navbar>
         <Router primary={false}>
           <Home path="/"/>
-          <ProductsHome path="productos/*" products={this.state.products} />
+          <ProductsHome path="productos/*"/>
           <Distribution path="distribuidoras"/>
           <Contact path="contacto"/>
         </Router>

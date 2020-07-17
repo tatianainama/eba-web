@@ -7,26 +7,28 @@ import { getById } from 'services/products.js';
 class ProductDetail extends React.Component {
   constructor (props) {
     super(props);
-    this.state = {
-      product: props.location.key === 'initial' ? undefined : props.location.state.product
-    }
+    console.log("yhehe")
+    // this.state = {
+    //   product: props.location.key === 'initial' ? undefined : props.location.state.product
+    // }
+    this.state = {}
   }
 
-  componentDidMount() {
-    if(this.state.product === undefined) {
-      getById(this.props.productId)
-      .then(product => {
-        this.setState({ product })
-      });
-    }
-  }
+  // componentDidMount() {
+  //   if(this.state.product === undefined) {
+  //     getById(this.props.productId)
+  //     .then(product => {
+  //       this.setState({ product })
+  //     });
+  //   }
+  // }
 
   render() {
-    const { product } = this.state;
+    // const { product } = this.state;
     return (
       <div>
         {
-          this.state.product ? (
+          product ? (
             <>
               <ul className="uk-breadcrumb">
                 <li>

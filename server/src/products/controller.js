@@ -13,7 +13,7 @@ const getAllProducts = (db) => (req, res, next) => {
 
 const getProduct = (db) => (req, res, next) => {
   const collection = db.collection('products');
-  return collection.findOne({_id: new ObjectID(req.params.productId)})
+  return collection.findOne({name: req.params.productName})
   .then(product => {
     res.json(product)
   }).catch(error => {
@@ -21,10 +21,10 @@ const getProduct = (db) => (req, res, next) => {
   })
 }
 
-const getByCategory = (db) => ({ body }, res) => {
+const getByCategory = (db) => ({ params }, res) => {
   const collection = db.collection('products');
-  const category = body.category;
-  const query = category === undefined ? {} : {
+  const category = params.category;
+  const query = category === 'all' ? {} : {
     category: { '$elemMatch': { '$eq': category }}
   }
   return collection.find(query).toArray().then(products => {
