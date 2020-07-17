@@ -1,7 +1,10 @@
 const API = process.env.API || '/';
 
-const GetData = (route) => {
-  const request = new Request(`${API}${route}`);
+const GetData = (route, body) => {
+  const request = new Request(`${API}${route}`, {
+    method: 'GET',
+    ...body && { body }
+  });
   return fetch(request)
   .then(response => {
     if (response.status === 200) {

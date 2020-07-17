@@ -6,6 +6,8 @@ import Section from 'components/Section';
 import Card from 'components/Card';
 import ProductDetail from 'components/ProductDetail';
 
+const API = process.env.API || '/';
+
 import './styles.css';
 
 const ProductsList = ({ products }) => {
@@ -19,7 +21,7 @@ const ProductsList = ({ products }) => {
               size='small'
               title={product.name}
               onClick={() => { navigate(`/productos/${product._id}`, { state: { product }}) }}
-              media={product.image ? `http://localhost:3000/images/${product.image}` : undefined}
+              media={product.image ? `${API}/images/${product.image}` : undefined}
             >
             </Card>
           </div>
@@ -69,16 +71,16 @@ const Products = ({
         </div>
         <div className="uk-width-expand@m">
             <ul id="component-tab-left" className="uk-switcher">
-                {
-                  categories.map(({name, products}) => (
-                    <li key={name}>
-                      <ProductsList products={products} />
-                    </li>
-                  ))
-                }
-                <li>
-                  <ProductsList products={products} />
-                </li>
+              {
+                categories.map(({name, products}) => (
+                  <li key={name}>
+                    <ProductsList products={products} />
+                  </li>
+                ))
+              }
+              <li>
+                <ProductsList products={products} />
+              </li>
             </ul>
         </div>
       </div>
@@ -95,6 +97,14 @@ const ProductsHome = ({ products }) => (
   </Section>
 );
 
+// class ProductsHome extends React.Component {
+//   contructor(props) {
+//     super(props);
+//     this.state = {
+//       products: []
+//     }
+//   }
+// }
 ProductsHome.propTypes = {
   products: PropTypes.arrayOf(PropTypes.shape({
     _id: PropTypes.string.isRequired,

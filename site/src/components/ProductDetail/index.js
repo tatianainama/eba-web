@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link } from '@reach/router';
 
-import GetData from 'services/getData.js';
+import { getById } from 'services/products.js';
+
 
 class ProductDetail extends React.Component {
   constructor (props) {
@@ -13,7 +14,7 @@ class ProductDetail extends React.Component {
 
   componentDidMount() {
     if(this.state.product === undefined) {
-      GetData(`/products/${this.props.productId}`)
+      getById(this.props.productId)
       .then(product => {
         this.setState({ product })
       });
