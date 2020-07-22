@@ -5,6 +5,7 @@ import { Router, navigate } from '@reach/router';
 import Section from 'components/Section';
 import Card from 'components/Card';
 import Link from 'components/Link';
+import Slideshow from 'components/Slideshow';
 
 import { getByCategory, getByName } from 'services/products.js';
 
@@ -62,30 +63,14 @@ const Details = ({ productName, location }) => {
             </ul>
             <div className="uk-grid">
               <div className="uk-width-medium">
-              
-              <div className="uk-position-relative uk-visible-toggle uk-light" tabIndex="-1" data-uk-slideshow="ratio: 0.6:1">
-
-                  <ul className="uk-slideshow-items" data-uk-height-viewport="offset-top: true">
-                      <li>
-                          <img src={`${API}/images/${product.image}`} alt={product.name}/>
-                      </li>
-                      {
-                        product.variants.map(variant => variant.image && (
-                          <li key={variant.code}>
-                            <img data-src={`${API}/images/${variant.image}`} alt={variant.content} data-uk-img="target: !.uk-slideshow-items"/>
-                          </li>
-                        ))
-                      }
-                  </ul>
-
-                  <a className="uk-position-center-left uk-position-small uk-hidden-hover" href="#" data-uk-slidenav-previous data-uk-slideshow-item="previous"></a>
-                  <a className="uk-position-center-right uk-position-small uk-hidden-hover" href="#" data-uk-slidenav-next data-uk-slideshow-item="next"></a>
-                  <ul>
-                      <li uk-slideshow-item="0"><a href="#">...</a></li>
-                      <li uk-slideshow-item="1"><a href="#">...</a></li>
-                      <li uk-slideshow-item="2"><a href="#">...</a></li>
-                  </ul>
-              </div>
+                <Slideshow
+                  images={[
+                    { url: `${API}/images/${product.image}`, alt: product.name },
+                    ...product.variants.filter(variant => variant.image !== undefined).map(variant => (
+                      { url: `${API}/images/${variant.image}`, alt: variant.content }
+                    ))
+                  ]}
+                />
               </div>
               <div className="uk-width-expand">
                 <div className="uk-container">
@@ -114,10 +99,16 @@ const Details = ({ productName, location }) => {
                         ))
                       }
                     </dd>
-                    <dt>Aplicacion</dt>
-                    <dd>
-                      { product.apply }
-                    </dd>
+                    {
+                      product.apply ? (
+                        <>
+                          <dt>Aplicacion</dt>
+                          <dd>
+                            { product.apply }
+                          </dd>
+                        </>
+                      ) : null
+                    }
                   </dl>
                   
                 </div>
