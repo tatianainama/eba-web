@@ -3,12 +3,8 @@ const webpack = require("webpack");
 const Dotenv = require('dotenv-webpack');
 
 module.exports = {
-  entry: ["react-hot-loader/patch", "./src/index.js"],
-  mode: "development",
-  watch: true,
-  watchOptions: {
-    poll: 1000
-  },
+  entry: ["./src/index.js"],
+  mode: "production",
   plugins: [
     new Dotenv()
   ],
@@ -56,12 +52,5 @@ module.exports = {
     path: path.resolve(__dirname, "dist"),
     publicPath: "/dist/",
     filename: "bundle.js"
-  },
-  devServer: {
-    contentBase: path.join(__dirname, "public/"),
-    port: 3030,
-    historyApiFallback: true,
-    publicPath: "http://localhost:3030/dist",
-    hotOnly: true,
   }
 };
