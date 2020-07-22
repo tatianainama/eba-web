@@ -28,7 +28,7 @@ const Card = ({
         ) : null
       }
       <div className='uk-card-body'>
-        <h4 className='uk-card-title'>{title}</h4>
+        <p className='uk-card-title uk-text-normal'>{title}</p>
         { subtitle ? (
           <p className='uk-text-meta uk-margin-remove-top'> {subtitle} </p>
         ) : null }
