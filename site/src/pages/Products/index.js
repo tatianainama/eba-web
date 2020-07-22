@@ -14,7 +14,7 @@ const UnparseData = (data) => data.replace(/_/g, ' ');
 
 import './styles.css';
 
-const ProductsList = ({ products }) => {
+const ProductsList = ({ products, category }) => {
   return (
     <div className="eba-products-list uk-child-width-1-2@s uk-child-width-1-4@m uk-text-center" data-uk-grid data-uk-height-match="target: > div > .uk-card">
       {
@@ -24,7 +24,7 @@ const ProductsList = ({ products }) => {
               color="muted"
               size='small'
               title={product.name}
-              onClick={() => { navigate(`/productos/detalle/${ParseData(product.name)}`) }}
+              onClick={() => { navigate(`/productos/detalle/${ParseData(product.name)}`, {state: {category: category }}) }}
               media={product.image ? `${API}/images/${product.image}` : undefined}
             >
             </Card>
@@ -35,21 +35,96 @@ const ProductsList = ({ products }) => {
   )
 };
 
-const Details = ({ productName, ...props }) => {
+const Details = ({ productName, location }) => {
   const [ product, setProduct ] = useState(undefined);
-  console.log(props);
+  const fromCategory = location.state ? location.state.category : undefined;
+  
   useEffect(() => {
     getByName(UnparseData(productName)).then(product => setProduct(product));
   }, [ productName ]);
 
+  console.log(product)
   return (
-    <div>
+    <div className="uk-container eba-product-detail">
       {
-        product && (
+        product ? (
           <div>
-            {product.name} 
+            <ul className="uk-breadcrumb">
+              <li><Link to="/productos">Productos</Link></li>
+              {
+                fromCategory && (
+                <li>
+                  <Link to={`/productos/${ParseData(fromCategory)}`}>{fromCategory}</Link>
+                </li>
+                )
+              }
+              <li>{ product.name }</li>
+            </ul>
+            <div className="uk-grid">
+              <div className="uk-width-medium">
+              
+              <div className="uk-position-relative uk-visible-toggle uk-light" tabIndex="-1" data-uk-slideshow="ratio: 0.6:1">
+
+                  <ul className="uk-slideshow-items" data-uk-height-viewport="offset-top: true">
+                      <li>
+                          <img src={`${API}/images/${product.image}`} alt={product.name}/>
+                      </li>
+                      {
+                        product.variants.map(variant => variant.image && (
+                          <li key={variant.code}>
+                            <img data-src={`${API}/images/${variant.image}`} alt={variant.content} data-uk-img="target: !.uk-slideshow-items"/>
+                          </li>
+                        ))
+                      }
+                  </ul>
+
+                  <a className="uk-position-center-left uk-position-small uk-hidden-hover" href="#" data-uk-slidenav-previous data-uk-slideshow-item="previous"></a>
+                  <a className="uk-position-center-right uk-position-small uk-hidden-hover" href="#" data-uk-slidenav-next data-uk-slideshow-item="next"></a>
+                  <ul>
+                      <li uk-slideshow-item="0"><a href="#">...</a></li>
+                      <li uk-slideshow-item="1"><a href="#">...</a></li>
+                      <li uk-slideshow-item="2"><a href="#">...</a></li>
+                  </ul>
+              </div>
+              </div>
+              <div className="uk-width-expand">
+                <div className="uk-container">
+                  <h2 className="uk-heading-bullet">{ product.name }</h2>
+                  <p className="uk-text-meta">{product.fullDesc}</p>
+                  <dl className="uk-description-list">
+                    {
+                      product.actives.length ? (
+                        <>
+                          <dt>Activos</dt>
+                          <dd>
+                            {
+                              product.actives.map(active => (
+                                <span className="uk-label uk-margin-small-right" key={active}>{active}</span>
+                              ))
+                            }
+                          </dd>
+                        </>
+                      ) : null
+                    }
+                    <dt>Presentacion</dt>
+                    <dd>
+                      {
+                        product.variants.map(variant => (
+                          <span className="uk-label uk-margin-small-right" key={variant.code}>{variant.content}</span>
+                        ))
+                      }
+                    </dd>
+                    <dt>Aplicacion</dt>
+                    <dd>
+                      { product.apply }
+                    </dd>
+                  </dl>
+                  
+                </div>
+              </div>
+            </div>
           </div>
-        )
+        ) : null
       }
     </div>
   )
@@ -67,7 +142,7 @@ const ProductsHome = () => (
 );
 
 const ProductList = ({ categoryName }) => {
-  const category = categoryName ? UnparseData(categoryName) : 'all';
+  const category = categoryName ? UnparseData(categoryName) : undefined;
   const [ products, setProducts ] = useState(undefined);
 
   useEffect(() => {
@@ -79,7 +154,7 @@ const ProductList = ({ categoryName }) => {
   return (
     <div>
       {
-        products && (<ProductsList products={products}/>)
+        products && (<ProductsList products={products} category={category}/>)
       }
     </div>
   )
