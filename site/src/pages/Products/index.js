@@ -6,6 +6,7 @@ import Section from 'components/Section';
 import Card from 'components/Card';
 import Link from 'components/Link';
 import Slideshow from 'components/Slideshow';
+import Label from 'components/Label';
 
 import { getByCategory, getByName } from 'services/products.js';
 
@@ -75,8 +76,10 @@ const Details = ({ productName, location }) => {
               <div className="uk-width-expand">
                 <div className="uk-container">
                   <h2 className="uk-heading-bullet">{ product.name }</h2>
-                  <p className="uk-text-meta">{product.fullDesc}</p>
+                  <p className="uk-text-meta">{product.desc}</p>
                   <dl className="uk-description-list">
+                    <dt>Descripcion</dt>
+                    <dd>{product.fullDesc}</dd>
                     {
                       product.actives.length ? (
                         <>
@@ -84,7 +87,7 @@ const Details = ({ productName, location }) => {
                           <dd>
                             {
                               product.actives.map(active => (
-                                <span className="uk-label uk-margin-small-right" key={active}>{active}</span>
+                                <Label key={active}>{active}</Label>
                               ))
                             }
                           </dd>
@@ -95,7 +98,7 @@ const Details = ({ productName, location }) => {
                     <dd>
                       {
                         product.variants.map(variant => (
-                          <span className="uk-label uk-margin-small-right" key={variant.code}>{variant.content}</span>
+                          <Label key={variant.code}>{variant.content}</Label>
                         ))
                       }
                     </dd>
