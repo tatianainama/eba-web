@@ -4,9 +4,9 @@ import './styles.css';
 
 const Slideshow = ({ images }) => {
   return (
-    <div className="uk-position-relative uk-visible-toggle uk-light eba-slideshow" tabIndex="-1" data-uk-slideshow="ratio: 0.5:1">
+    <div className="uk-position-relative uk-visible-toggle uk-dark eba-slideshow" tabIndex="-1" data-uk-slideshow="ratio: 0.5:1">
 
-      <ul className="uk-slideshow-items" data-uk-height-viewport="offset-top: true">
+      <ul className="uk-slideshow-items">
         {
           images.map( ({ url, alt }, index) => (
             <li key={index}>
