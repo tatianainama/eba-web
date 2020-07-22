@@ -1,12 +1,14 @@
 const path = require("path");
 const webpack = require("webpack");
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const Dotenv = require('dotenv-webpack');
 
 module.exports = {
   entry: ["./src/index.js"],
   mode: "production",
   plugins: [
-    new Dotenv()
+    new Dotenv(),
+    new HtmlWebpackPlugin()
   ],
   module: {
     rules: [
