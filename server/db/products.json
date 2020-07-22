@@ -58,10 +58,11 @@
         "code": 2002,
         "content": "250 ml.",
         "price": 398,
-        "sellPrice": 0
+        "sellPrice": 0,
+        "image": "sublime-uvit-250.png"
       }
     ],
-    "image": "sublime-uvit-60.png",
+    "image": "sublime-uvit.png",
     "apply": "Tras limpiar y tonificar rostro, cuello y escote, aplicar diariamente por la noche. Dependiendo de las necesidades de la piel, se combinará la Crema Sublime Uvit",
     "lang": "es"
   },
@@ -322,7 +323,8 @@
         "code": 2011,
         "content": "200 ml.",
         "price": 320,
-        "sellPrice": 0
+        "sellPrice": 0,
+        "image": "acne-skin-200.png"
       }
     ],
     "image": "acne-skin.png",
