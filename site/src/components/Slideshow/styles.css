@@ -1,0 +1,10 @@
+.eba-slideshow li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.eba-slideshow .uk-slidenav-previous.uk-slidenav,
+.eba-slideshow .uk-slidenav-next.uk-slidenav {
+  color: black;
+}
