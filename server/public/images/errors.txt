@@ -1,0 +1,2 @@
+[2020-7-22 13:36:49] layer "peeling-bio-regulador-30.pmg": Unsupported extension: pmg
+[2020-7-22 13:36:49] layer "hi-tonico-50.png copy": Expected end of input but "c" found.
