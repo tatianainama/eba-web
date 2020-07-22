@@ -63,7 +63,7 @@ const Details = ({ productName, location }) => {
               <li>{ product.name }</li>
             </ul>
             <div className="uk-grid">
-              <div className="uk-width-medium">
+              <div className="uk-width-1-4@s uk-width-1-3@m">
                 <Slideshow
                   images={[
                     { url: `${API}/images/${product.image}`, alt: product.name },
