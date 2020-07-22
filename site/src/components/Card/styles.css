@@ -23,8 +23,8 @@
   padding-top: 1rem;
 }
 
-.eba-card.uk-card uk-card-title {
-  font-size: 20px;
+.eba-card.uk-card .uk-card-title {
+  font-size: 1.2rem;
 }
 .eba-card .uk-card-media-top img {
   width: 100%;
