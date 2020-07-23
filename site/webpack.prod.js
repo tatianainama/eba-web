@@ -8,7 +8,10 @@ module.exports = {
   mode: "production",
   plugins: [
     new Dotenv(),
-    new HtmlWebpackPlugin()
+    new HtmlWebpackPlugin({
+      title: 'ESPECIFICOS Buenos Aires',
+      template: 'public/index.html'
+    })
   ],
   module: {
     rules: [
@@ -28,7 +31,7 @@ module.exports = {
           'file-loader',
           {
             loader: 'image-webpack-loader',
-            options: {
+            options: { 
               mozjpeg: {
                 progressive: true,
                 quality: 65
