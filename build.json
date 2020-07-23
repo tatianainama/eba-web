@@ -7,10 +7,10 @@
         "dist/"
       ]
     }, {
-      "name": "eba-server",
+      "name": "server",
       "dir": "server",
       "artifacts": [
-        "lib/"
+        "dist/"
       ]
     }
   ]
