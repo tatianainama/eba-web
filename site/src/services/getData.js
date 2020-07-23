@@ -1,4 +1,4 @@
-const API = process.env.API || '/';
+const API = process.env.API ? `${process.env.API}/` : '/';
 
 const GetData = (route, body) => {
   const request = new Request(`${API}${route}`, {

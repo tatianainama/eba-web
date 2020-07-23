@@ -1,5 +1,5 @@
 import React from 'react';
-import coverImg from 'img/cover-photo.jpg';
+import coverImg from 'img/grupo-pagina.jpg';
 import Productos from 'img/productos.png';
 import Protectores from 'img/protectores.png';
 import Monodosis from 'img/monodosis.png';

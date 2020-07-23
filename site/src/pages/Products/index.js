@@ -10,7 +10,7 @@ import Label from 'components/Label';
 
 import { getByCategory, getByName } from 'services/products.js';
 
-const API = process.env.API || '/';
+const API = process.env.API || '';
 const ParseData = (data) => data.replace(/ /g, '_');
 const UnparseData = (data) => data.replace(/_/g, ' ');
 
